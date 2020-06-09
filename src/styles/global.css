@@ -1,0 +1,128 @@
+@import url("./presentation.css");
+
+#___gatsby {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  /* justify-content: center; */
+}
+
+.container {
+  background-image: url("../images/muk-fotel2-removebg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.info article {
+  margin: 0;
+  padding: 1rem;
+}
+
+.info article h2 {
+  margin-top: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row-reverse;
+    background-position: right bottom;
+    background-attachment: initial;
+  }
+
+  .info {
+    width: 60%;
+  }
+
+  .info article {
+    margin: 1rem 0;
+  }
+
+  .info a {
+    margin: 2rem 0;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* .menu > section::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 0;
+      top: 0;
+      left: 100%;
+      border-top: solid 50px transparent;
+      border-left: solid 50px rgba(235, 213, 179, 0.6);
+      border-right: solid 50px transparent;
+      border-bottom: solid 50px transparent;
+      z-index: -10;
+    }
+  
+    .menu > section.biz::after {
+      border-top: solid 75px transparent;
+      border-left: solid 75px rgba(235, 213, 179, 0.6);
+      border-right: solid 75px transparent;
+      border-bottom: solid 75px transparent;
+    } */
+}
+
+@media (min-width: 1200px) and (min-height: 720px) {
+  .container {
+    box-sizing: border-box;
+    width: 1200px;
+    min-height: 90vh;
+    max-height: 90vh;
+    margin: 2rem auto;
+    border: 1px solid #aaa;
+    box-shadow: 1px 1px 5px #888;
+    border-radius: 10px;
+  }
+
+  .info {
+    right: 50%;
+  }
+}
+
+@media (max-height: 670px) and (min-width: 900px) {
+  .menu section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .info article {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .info ul {
+    top: unset;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info ul li {
+    width: 100%;
+  }
+}
