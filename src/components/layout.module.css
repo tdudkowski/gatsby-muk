@@ -48,7 +48,7 @@ main article h3 {
   border-bottom: 1px solid #998;
 }
 
-main article section {
+main article > section {
   border: 1px solid #998;
   border-radius: 6px;
   margin: 1rem;

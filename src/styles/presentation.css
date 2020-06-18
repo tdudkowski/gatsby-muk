@@ -88,7 +88,7 @@ section:hover {
 }
 
 .news p {
-  padding: 0.5rem;
+  padding: 0;
   margin: 0;
   text-align: left;
 }
@@ -218,7 +218,7 @@ footer a:hover {
   }
 
   .menu > .news {
-    width: 90%;
+    width: 95%;
     margin-top: 0;
     /* border: none; */
   }
@@ -325,4 +325,9 @@ li a {
   background-color: rgba(250, 250, 250, 0.3);
   display: flex;
   flex-direction: column;
+}
+
+.contact-card {
+  background-color: rgba(200, 200, 200, 0.2);
+  padding: 1rem;
 }

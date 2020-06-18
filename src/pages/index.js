@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
+import "../styles/css/font-awesome.css"
 
 const IndexPage = () => (
   <div className="container">
@@ -9,13 +10,16 @@ const IndexPage = () => (
       <article>
         <h2>Przewodnik po Wrocławiu</h2>
         <p>
-          Via Wrocław - kompleksowe usługi turystyczne po Wrocławiu. Znajdziesz
-          tu ciekawostki o stolicy Dolnego Śląska, zamówisz licencjonowanego
-          przewodnika i wybierzesz odpowiednią trasę.
+          Via Wrocław - Małgorzata Urlich-Kornacka kompleksowe usługi
+          turystyczne po Wrocławiu. Znajdziesz tu ciekawostki o stolicy Dolnego
+          Śląska, zamówisz licencjonowanego przewodnika i wybierzesz odpowiednią
+          trasę.
         </p>
+        <p>Usługi w języku polskim i niemieckim</p>
         <p>
-          Usługi w języku polskim, niemieckim, angielskim, rosyjskim oraz
-          czeskim.
+          <i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;607 239 776 |{" "}
+          <i className="fa fa-at" aria-hidden="true"></i>
+          &nbsp;malgorzata.wroclove@gmail.com
         </p>
       </article>
       <ul>
@@ -54,21 +58,18 @@ const IndexPage = () => (
         </ul>
       </section>
       <section className="news">
-        <h2>Aktualności</h2>
-        <section>
-          <h3>Tytuł aktualności</h3>
-          <p>
-            Treść aktualności Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Eum commodi reiciendis voluptatibus. Quasi vitae
-            maiores eum quod. Sit error impedit at neque, reprehenderit ratione,
-            similique molestias veniam aliquid delectus blanditiis.
-          </p>
-        </section>
-        <ul>
-          <li>
-            <Link to="news">więcej...</Link>
-          </li>
-        </ul>
+        <h2>Facebook</h2>
+
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffilmwroclaw%2F&tabs=timeline&width=380&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="380"
+          height="320"
+          styleName="border:none;overflow:hidden"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+          allow="encrypted-media"
+        ></iframe>
       </section>
     </div>
   </div>

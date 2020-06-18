@@ -33,6 +33,15 @@
   justify-content: space-between;
 }
 
+.contact-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.news iframe html {
+  max-width: calc(100% - 28px);
+}
+
 @media (min-width: 1024px) {
   .container {
     flex-direction: row-reverse;
@@ -62,6 +71,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .contact-card {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   /* .menu > section::after {
@@ -100,6 +114,10 @@
 
   .info {
     right: 50%;
+  }
+
+  .news {
+    min-height: 340px;
   }
 }
 

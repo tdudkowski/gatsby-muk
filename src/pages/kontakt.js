@@ -1,33 +1,55 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../styles/css/font-awesome.css"
 
 const KontaktPage = () => (
   <Layout>
     <SEO title="Kontakt" />
     <h2>Kontakt</h2>
     <p>
-      Witamy na oficjalnej stronie firmy Via Wrocław, która oferuje kompleksowe
-      usługi turystyczne po Wrocławiu.
+      Witamy na oficjalnej stronie firmy Via Wrocław-Małgorzata Urlich-Kornacka,
+      która oferuje kompleksowe usługi turystyczne po Wrocławiu.
     </p>
-
     <p>
       Na stronie www.viawroclaw.com znajdziesz ciekawostki o stolicy Dolnego
       Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która
-      najbardziej odpowiada Twoim indywidualnym potrzebom.{" "}
+      najbardziej odpowiada Twoim indywidualnym potrzebom.
     </p>
-    <p>
-      Oferujemy usługi w języku polskim, niemieckim, angielskim, rosyjskim oraz
-      czeskim.
-    </p>
+    <p>Oferujemy usługi w języku polskim i niemieckim.</p>
     <p>
       Zapraszamy do współpracy firmy, instytucje oraz biura turystyczne.
-      Gwarantujemy fachową obsługę, młodych, energicznych i pełnych pasji
-      przewodników, zrzeszonych w Stowarzyszeniu Podróżników TUITAM, oryginalny
-      sposób oprowadzania i pełne zadowolenie klienta.
+      Gwarantujemy fachową obsługę, oryginalny sposób oprowadzania i pełne
+      zadowolenie klienta.
     </p>
-
-    <form method="post" action="https://formspree.io/xeqrkrqa" name="contact">
+    <div className="contact-card">
+      <section>
+        Via Wrocław-Małgorzata Urlich-Kornacka
+        <br />
+        ul. Budziszyńska 27a/26
+        <br />
+        54-434 Wrocław
+        <br />
+        NIP: 616-139-17-82
+      </section>
+      <section>
+        <i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;607 239 776
+        <br />
+        <i className="fa fa-at" aria-hidden="true"></i>
+        &nbsp;malgorzata.wroclove@gmail.com
+        <br />
+        Jesteśmy na facebooku:{" "}
+        <a href="https://pl-pl.facebook.com/stowarzyszenieTUiTAM">
+          Stowarzyszenie TUiTAM
+        </a>
+      </section>
+    </div>
+    <form
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name="contact"
+    >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
       <h3>Kontakt</h3>
@@ -46,12 +68,6 @@ const KontaktPage = () => (
         <input type="reset" value="Wyczyść formularz" className="btn" />
       </div>
     </form>
-    <p>
-      Wycieczka w języku czas trwania cena polskim do 1 godziny do 3,5 godzin
-      każda następna godzina 100 zł 225 zł 50 zł obcym do 1 godziny do 3,5
-      godzin każda następna godzina 150 zł 300 zł 80 zł Całodzienny pilotaż w
-      języku polskim lub niemieckim: 300 zł
-    </p>
   </Layout>
 )
 
