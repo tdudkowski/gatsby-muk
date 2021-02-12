@@ -8,20 +8,11 @@ const KontaktPage = () => (
     <SEO title="Kontakt" />
     <h2>Kontakt</h2>
     <p>
-      Witamy na oficjalnej stronie firmy Via Wrocław-Małgorzata Urlich-Kornacka,
-      która oferuje kompleksowe usługi turystyczne po Wrocławiu.
+      Zapraszamy do współpracy firmy, instytucje oraz biura turystyczne. Gwarantujemy fachową obsługę,
+      oryginalny i ciekawy sposób oprowadzania. Oferujemy usługi w języku polskim i niemieckim.
+      Wystawiamy faktury.
     </p>
-    <p>
-      Na stronie www.viawroclaw.com znajdziesz ciekawostki o stolicy Dolnego
-      Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która
-      najbardziej odpowiada Twoim indywidualnym potrzebom.
-    </p>
-    <p>Oferujemy usługi w języku polskim i niemieckim.</p>
-    <p>
-      Zapraszamy do współpracy firmy, instytucje oraz biura turystyczne.
-      Gwarantujemy fachową obsługę, oryginalny sposób oprowadzania i pełne
-      zadowolenie klienta.
-    </p>
+
     <div className="contact-card">
       <section>
         Via Wrocław-Małgorzata Urlich-Kornacka

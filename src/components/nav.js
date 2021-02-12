@@ -8,19 +8,19 @@ const Nav = () => (
         <Link to="/">Strona główna</Link>
       </li>
       <li>
-        <Link to="o">O mnie</Link>
+        <Link to="/o">O mnie</Link>
       </li>
       <li>
-        <Link to="wroclaw">O Wrocławiu</Link>
+        <Link to="/wroclaw">O Wrocławiu</Link>
       </li>
       <li>
-        <Link to="wycieczki">Wycieczki!</Link>
+        <Link to="/wycieczki">Wycieczki!</Link>
       </li>
       <li>
-        <Link to="publikacje">Publikacje</Link>
+        <Link to="/publikacje">Publikacje</Link>
       </li>
       <li>
-        <Link to="deutsch">Deutsch</Link>
+        <Link to="/deutsch">Deutsch</Link>
       </li>
     </ul>
   </nav>

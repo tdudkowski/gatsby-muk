@@ -5,7 +5,7 @@ const Aside = () => (
   <aside>
     <ul>
       <li>
-        <Link to="news">Aktualności</Link>
+        <Link to="/news">Aktualności</Link>
       </li>
       <li>
         <a href="http://przewodnicy.org/">TUiTAM</a>
@@ -14,7 +14,7 @@ const Aside = () => (
     <hr />
     <ul className="contact">
       <li>
-        <Link to="kontakt">Kontakt</Link>
+        <Link to="/kontakt">Kontakt</Link>
       </li>
       <li>
         <a href="http://www.viawroclaw.com/rezerwacja.php">Zamów wycieczkę</a>

@@ -6,13 +6,13 @@ const NewsPage = ({ data }) => (
   <Layout>
     <SEO title="Aktualności" />
 
-    {data.allWordpressPost.edges.map(({ node }) => (
+    {/* {data.allWordpressPost.edges.map(({ node }) => (
       <section>
         <h4>{node.title}</h4>
         <p>{node.content}</p>
         <p>{node.id}</p>
       </section>
-    ))}
+    ))} */}
 
     <h2>Aktualności</h2>
     <p>
@@ -50,17 +50,17 @@ const NewsPage = ({ data }) => (
 
 export default NewsPage
 
-export const pageQuery = graphql`
-  query MyQuery {
-    allWordpressPost {
-      edges {
-        node {
-          title
-          content
-          id
-          date
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query MyQuery {
+//     // allWordpressPost {
+//     //   edges {
+//     //     node {
+//     //       title
+//     //       content
+//     //       id
+//     //       date
+//     //     }
+//     //   }
+//     // }
+//   }
+// `

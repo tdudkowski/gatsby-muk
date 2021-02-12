@@ -6,209 +6,117 @@ const WycieczkiPage = () => (
   <Layout>
     <SEO title="Wycieczki" />
 
-    <h2>Wycieczki</h2>
+    <h2>Wycieczki – przykładowa oferta</h2>
     <p>
-      Przewodnicy Klubu ViaWrocław oraz Stowarzyszenia Podróżników TUiTAM
-      zapraszają na cykliczne wycieczki po Wrocławiu. Cykl wycieczek:
+      Poniżej kilka propozycji wycieczek. Każda z proponowanych tras dostosowywana jest do wieku,
+      zainteresowań i możliwości grupy. Czas ich trwania waha się od półtorej do trzech godzin.
     </p>
+
+    <h3>TOP 10</h3>
+
+    <h3>Dla wszystkich</h3>
 
     <ul>
-      <li>
-        <a href="http://przewodnicy.org/dzialalnosc/wycieczki-odkrywamy-wroclaw">
-          ODKRYWAMY WROCŁAW
-        </a>{" "}
-        przeznaczony dla dorosłych,
-      </li>
-      <li>
-        <a href="http://przewodnicy.org/dzialalnosc/wycieczki-dla-dzieci-poznajemy-wroclaw">
-          POZNAJEMY WROCŁAW
-        </a>{" "}
-        dla najmłodszych wrocławian.
-      </li>
+      <li>1. „Wrocław – miasto spotkań” – najpopularniejsza trasa, wiodąca z Rynku wrocławskiego przez
+      Jatki, Uniwersytet Wrocławski, Ossolineum, Halę Targową na Ostrów Tumski, zwany kolebką miasta
+      lub „śląskim Watykanem”. Dogodne położenie nad Odrą i jej czterema głównymi dopływami, ważne
+      szlaki, którymi podążały kupieckie karawany, założone w 1000 roku biskupstwo wrocławskie i
+      pielgrzymi podróżujący z Czech do grobu św. Wojciecha w Gnieźnie – wszystkie te czynniki wpłynęły
+      na to, że Wrocław od początku stał się „miastem spotkań”. Tutaj spotyka się wschód z zachodem,
+      tradycja z nowoczesnością, stara architektura z nową. Wycieczka prowadzi po najpiękniejszych
+      miejscach, jest to spacer śladami architektury, ciekawej historii miasta – „mikrokosmosu Europy”,
+śladami wrocławskich legend oraz anegdot o sławnych mieszkańcach.</li>
+      <li>2. „Wrocławskie NAJ” – wycieczka szlakiem mniej lub bardziej oczywistych rekordów naszego miasta:
+      najdłużej działający dom handlowy, Gitarowy Rekord Guinnessa, jedyny na świecie pomnik
+      przepukliny pępkowej, pierwszy wrocławski krasnal, najwyżej położony most Starego Miasta – te i
+      inne ciekawe rekordy i miejskie osobliwości pozwolą na poznanie Wrocławia z zupełnie innej strony.
+      Różnorodność obiektów i historii z nimi związanych oraz czasów, w których powstawały, tworzy
+      obraz miasta nietuzinkowego, miasta z charakterem. To wrocławskie NAJ dla NAJbardziej
+dociekliwych!</li>
     </ul>
 
-    <p>Proponowane trasy wycieczek:</p>
+    <h3>Dla młodzieży</h3>
 
-    <h3>Wroocław miastem spotkań</h3>
+    <ul>
+      <li>3. „Wrocław dla odkrywców” – wycieczka zmuszająca do myślenia i pobudzająca do kreatywności.
+      Tym razem to nie przewodnik będzie grał pierwsze skrzypce! To uczestnicy muszą się wykazać
+      zaangażowaniem, szybkością i spostrzegawczością. Po niedługim spacerze z przewodnikiem
+      otrzymają bowiem grę miejską i będą musieli samodzielnie rozwiązać zadania: odszukać różne
+      miejsca, znajdujące się na Rynku wrocławskim, rozszyfrować i odnaleźć informacje ukryte na
+      fasadach budynków, czasami zapytać o coś ich mieszkańców. Dla zwycięskiej grupy przewidziana jest
+mała niespodzianka. Wycieczka idealna również dla polsko-niemieckich wymian szkolnych.</li>
+      <li>4. „Wrocław literacko i filmowo” – spacer prezentujący zarówno dorobek literacki, jak i filmowy
+      naszego miasta. W trakcie wędrówki przybliżone zostaną sylwetki pisarzy i poetów wrocławskich,
+      miejsca z nimi związane i ich dzieła oraz sylwetki reżyserów, którzy zdecydowali się umiejscowić akcję
+      swoich filmów we Wrocławiu. Podczas wycieczki pokażemy mniej lub bardziej oczywiste plenery i
+      opowiemy o dziełach, które stały się inspiracją do realizacji takich filmów i seriali jak „Sługi boże”,
+      „Strachy”, „Popiół i diament”, „Lalka”, „Niemcy”, „Bułeczka”, „Fantom”, „Zaraza”, „Uciec jak
+najbliżej”, „Złote Koło”, „Kobieta w Berlinie”.</li>
+    </ul>
 
-    <p>
-      Wrocław został nazwany przez papieża Jan Pawła II „miastem spotkań”. I
-      faktycznie tak jest. Tu spotyka się wschód z zachodem, tradycja z
-      nowoczesnością, stara architektura z nową. Miastem spotkań był Wrocław już
-      w średniowieczu. Tu przecinały się najważniejsze szlaki kupieckie
-      ówczesnej Europy: „Szlak Bursztynowy” znad Adriatyku nad Morze Bałtyckie
-      oraz „Wysoki Trakt” z Ukrainy na zachód Europy. Dlatego Wrocław stał się
-      szybko centrum targowym: przez miasto ciągnęły kupieckie karawany w różne
-      strony świata oraz pielgrzymi podróżujący z Czech do grobu św. Wojciecha w
-      Gnieźnie. Dogodne położenie nad Odrą i jej czterema dopływami, które
-      stanowiły jego naturalną ochronę, przyczyniło się do tego, że z małego
-      grodu na Ostrowie Tumskim, powstała wspaniała metropolia.
-    </p>
-    <p>
-      Wycieczka poprowadzi po najpiękniejszych miejscach we Wrocławiu, śladami
-      średniowiecznej i barokowej architektury i ciekawej historii miasta –
-      „mikrokosmosu Europy”, śladami wrocławskich legend oraz anegdot o sławnych
-      mieszkańcach miasta.
-    </p>
-    <p>
-      Trasa: Zwiedzanie najstarszej części miasta – Ostrowa Tumskiego wraz z
-      Katedrą (istnieje możliwość wejścia do tylnych kaplic Katedry, które nie
-      zostały zniszczone podczas II wojny światowej, wstęp 4 PLN od osoby),
-      przejście przez Wyspę Piaskową obok Hali Targowej i Ossolineum do
-      Uniwersytetu (tu zwiedzanie barokowego kompleksu, m.in. Auli Leopoldina
-      oraz Oratorium Marianum – wstęp 6,00 PLN od osoby) oraz zwiedzanie Rynku z
-      Ratuszem.
-    </p>
-    <p>Czas trwania wycieczki: około 3 godz.</p>
+    <h3>Dla dorosłych</h3>
 
-    <h3>Szlakiem legend wrocławskich</h3>
-    <p>
-      Wrocław bez wątpienia był i jest miastem magicznym. Na magię miasta
-      składają się nie tylko wyjątkowe budowle, ale również przepiękne legendy i
-      historie. Wszyscy znają zabijającego wzrokiem bazyliszka, ziejącego ogniem
-      smoka wawelskiego, trykające się koziołki... My nie jesteśmy gorsi!
-    </p>
-    <p>
-      Uczestnicy wycieczki w czasie spaceru po Ostrowie Tumskim legendy i Starym
-      Mieście poznają wrocławskie podania, zobaczą miejsca, z którymi związani
-      są legendarni bohaterowie. Będzie się można dowiedzieć np. Dlaczego św.
-      Jadwiga bez butów chodziła? Jak nawrócili się źli zbójcy? Gdzie we
-      Wrocławiu jest „brama kluskowa”? Skąd się wziął zwyczaj topienia marzanny?
-      Kto i dlaczego pojawia się w nocy na „Mostku Pokutnic”?
-    </p>
-    <p>Czas trwania wycieczki: około 3 godz.</p>
+    <ul>
+      <li>5. „Śladami Eberharda Mocka” – propozycja dla zwolenników nieszablonowego zwiedzania miasta,
+      którzy chcieliby się zapoznać z historią i architekturą Wrocławia, zagłębiając się jednocześnie w świat
+      znakomitych powieści kryminalnych Marka Krajewskiego. Literacki spacer z dreszczykiem będzie
+      okazją do poznania złożonego i wyjątkowego charakteru miasta. Podczas wędrówki nie zabraknie
+      ciekawostek historycznych dotyczących odwiedzanych miejsc, cytatów z powieści oraz odwołań do
+      wydarzeń z powieści Marka Krajewskiego. Zapraszamy do podróży w czasie śladami zaginionego
+Breslau…</li>
+    </ul>
+    <p>Dla poszukiwaczy dodatkowych wrażeń proponujemy trasę z elementami animacji turystycznej:
+kostiumem, muzyką i małym co nieco.</p>
+    <ul>
+      <li>6. „Kryminalny Wrocław kobiecym okiem” – wycieczka na podstawie wrocławskich retrokryminałów
+      Nadii Szagdaj oraz innych opowieści z dreszczykiem, których autorkami lub bohaterkami są kobiety.
+      Podczas spaceru będzie można usłyszeć, jak zbrodniczy Wrocław wygląda z kobiecej perspektywy,
+      czym charakteryzują się historie kryminalne pisane przez kobiety oraz przypomnieć sobie tragiczne
+      losy kobiet związanych z Wrocławiem (m.in. Clara Immerwahr-Haber, Edyta Stein, Anna German,
+      Agnieszka Kotlarska-Świątek). To wycieczka z dreszczykiem – nie tylko dla kobiet!
+      Dla poszukiwaczy dodatkowych wrażeń proponujemy trasę z elementami animacji turystycznej:
+kostiumem, muzyką i małym co nieco.</li>
+    </ul>
 
-    <h3>Śladami kultury żydowskiej we Wrocławiu</h3>
-    <p>
-      Wrocław nie przypadkiem nazywano kiedyś „kwiatem Europy”. Od zawsze
-      spotykały się tu różne religie i kultury, przyczyniając się do rozkwitu –
-      niczym wielobarwnej kwietnej mozaiki – życia naszego miasta. Znaczącą
-      część tej mozaiki stanowiła narodowość żydowska wraz ze swą liczącą kilka
-      tysięcy lat tradycją. Ślady, jakie pozostały po żyjącej tu narodowości
-      żydowskiej przypominają o dokonaniach i znaczeniu Żydów dla historii
-      naszego miasta i regionu.
-    </p>
-    <p>
-      Stary Cmentarz Żydowski przy ul. Ślężnej stanowi, ze względu na pochowane
-      tutaj najwybitniejsze jednostki XIX i XX-wiecznego miasta, swoisty panteon
-      wrocławskich Żydów. Zespół rzeźby nagrobnej, od tradycyjnych macew do
-      monumentalnych grobowców, stanowi niezwykłe miejsce na turystycznej mapie
-      Wrocławia. Znajduje się tu ok. 12 tys. nagrobków i grobowców
-      reprezentujących różne style oraz kierunki XIX i XX w.: kaplice imitujące
-      antyczne świątynie, portale oraz baldachimy z roślinnymi motywami
-      romańskimi, zapożyczenia z architektury bizantyjskiej i islamu, nagrobki
-      secesyjne oraz w duchu modernizmu. Są tu tradycyjne skromne macewy z
-      napisami w języku hebrajskim, są też nagrobki i grobowce z napisami
-      niemieckimi.
-    </p>
-    <p>
-      Na cmentarzu spoczywa cała elita XIX i XX-wiecznego Wrocławia: ludzie
-      biznesu: bracia Alexander (na nagrobku płaskorzeźba nieistniejącego dziś
-      już banku, należącego do tej rodziny), Adolf Bielschowsky, właściciel
-      młynu Maria na Wyspie Piaskowej (pomnik w formie młyna),
-    </p>
-    <p>
-      Istnieje możliwość połączenia trasy ze zwiedzaniem Synagogi pod Białym
-      Bocianem.
-    </p>
-    <p>Czas trwania wycieczki: około 2 godz.</p>
+    <h3>Dla dzieci</h3>
 
-    <h3>W poszukiwaniu krasnoludków</h3>
+    <ul>
+      <li>7. „Szlakiem legend wrocławskich” – wycieczka po Starym Mieście lub Ostrowie Tumskim. Na magię
+      miasta składają się nie tylko wyjątkowe budowle, ale również przepiękne legendy i historie. Dlaczego
+      św. Jadwiga bez butów chodziła? Skąd się wziął zwyczaj topienia marzanny? Co się stało z najwyższą
+      wieżą we Wrocławiu, jak powstała miejska waga oraz kto i dlaczego pojawia się w nocy na „mostku
+      pokutnic”? Uczestnicy wycieczki poznają wrocławskie legendy, niezwykłe (prawdziwe) historie i
+wrocławskie anegdoty i zobaczą miejsca, z którymi związani są legendarni bohaterowie.</li>
+      <li>8. „W królestwie Viadrusa” – spacer z Odrą w tle, która towarzyszyła Wrocławiowi od zarania
+      dziejów, zapewniając mu naturalną ochronę, stanowiąc drogę komunikacyjną, dostarczając jego
+      mieszkańcom pożywienia i napędzając liczne niegdyś młyny wrocławskie. Odra ma swojego boga
+      –Viadrusa. Przedstawiany jest on jako potężny, muskularny mężczyzna z wiosłem w ręku, które
+      symbolizuje żeglowność rzeki. Gdzie mieszka bóg Viadrus? Co się dzieje, kiedy Viadrusa ogarnia złość?
+      Dlaczego Wrocław nazywano Wenecją Północy? Odpowiedzi na te pytania będzie można usłyszeć
+podczas spaceru nadodrzańskimi bulwarami i wyspami, licznymi kładkami i mostami.</li>
+    </ul>
 
-    <p>Czy wy wiecie, czy nie wiecie? – Krasnoludki są na świecie!</p>
-    <p>
-      Co zachwyciło krasnoludki we Wrocławiu, że założyły właśnie tutaj swoją
-      osadę stając się nieodłącznym symbolem naszego miasta. Jak wyglądają? Kim
-      są? Co krasnoludki lubią najbardziej? Dowiecie się tego, gdy wybierzecie
-      się na wycieczkę szlakiem skrzatów. Krasnale upodobały sobie szczególnie
-      Stare Miasto, lubią przyglądać się ludziom, cenią sobie piękne i stare
-      miejsca. Podczas wspólnej wyprawy spróbujemy zastać przy pracy małego
-      pracza oraz skrzata-rzeźnika, pomóc krasnalom-siłaczom, a także obudzić
-      krasnala-śpiocha i zapukać do tajemniczej krasnoludkowej bramy.
-    </p>
-    <p>Czas trwania wycieczki: około 2 godz.</p>
-    <h3>Wrocław dla odkrywców</h3>
-    <p>
-      Wycieczka skierowana do młodzieży szkolnej, która oczekuje czegoś więcej
-      niż tradycyjne zwiedzanie z przewodnikiem. Uczniowie otrzymują od
-      przewodnika grę detektywistyczną „Odkryj Wrocław”, samodzielnie rozwiązują
-      zadania udając się do różnych miejsc w Rynku i wokół Rynku wrocławskiego,
-      uzyskują informacje u mieszkańców, rysują herb miasta, próbują
-      rozszyfrować i odnaleźć informacje ukryte na fasadach budynków. Dodatkowo
-      poszczególne grupy otrzymują jedno zdjęcie jakiegoś tajemniczego miejsca
-      lub rzeźby we Wrocławiu z krótkim opisem, legendą lub komentarzem pod
-      spodem i samodzielnie przygotowują krótką inscenizację związaną właśnie z
-      tym zdjęciem. Po ponownym spotkaniu z przewodnikiem następuje rozwiązanie
-      zadań z dodatkowym komentarzem przewodnickim. Zwycięska grupa otrzymuje
-      dyplom „Odkrywcy Wrocławia” oraz małą niespodziankę. Dalsza wycieczka
-      poprowadzi w kierunku Uniwersytetu Wrocławskiego oraz Ostrowa Tumskiego i
-      będzie łączyła w sobie opowieść przewodnicką oraz inscenizacje
-      przygotowane przez uczniów w poszczególnych miejscach na trasie wycieczki.
-    </p>
-    <p>
-      Wycieczka zmuszająca do myślenia i pobudzająca do kreatywności. Wycieczka
-      inna niż wszystkie!
-    </p>
-    <p>Czas trwania wycieczki: 3,5 godz.</p>
-    <h3>Wrocław liryczny – rejs statkiem</h3>
-    <p>
-      Rejs statkiem po Odrze z poezją, muzyką i opowieścią przewodnicką
-      Wycieczka polecana dla osób, które chcą spojrzeć na miasto z perspektywy
-      Odry, rzeki, która towarzyszyła Wrocławiowi od samego początku,
-      zapewniając mu naturalną ochronę, stanowiąc drogę komunikacyjną,
-      dostarczając jego mieszkańcom pożywienia i napędzając liczne niegdyś młyny
-      wrocławskie. Odra posiada w granicach Wrocławia cztery dopływy: Oławę,
-      Ślęzę i Bystrzycę oraz prawostronną Widawę. To dzięki wyspom, które
-      powstały przez liczne rozgałęzienia Odry oraz mosty (łącznie z mostami
-      kolejowymi i kładkami jest ich obecnie ponad 120), miasto otrzymało miano
-      „Wenecji Północy”. Nie musisz jechać do Włoch, atmosferę Wenecji poczujesz
-      u nas! Odra była błogosławieństwem, ale i przekleństwem mieszkańców
-      Wrocławia. Po katastrofalnych powodziach z końca XIX w. ówczesny rząd
-      zdecydował się na budowę systemu śluz i zapór przeciwpowodziowych.
-      Stanowią one do dziś niezwykłą atrakcję turystyczną miasta. Wobec potęgi
-      żywiołu podczas powodzi tysiąclecia w 1997r. okazały się one jednak
-      niewystarczające.
-    </p>
-    <p>
-      Wrocław to miasto wyjątkowej wielokulturowości, która znalazła swoje
-      odbicie w poezji poświęconej miastu, zwanemu Vratislavią, Breslau lub
-      Wrocławiem. W czasie rejsu statkiem będzie można wysłuchać historii
-      miasta, najpiękniejszych wrocławskich podań, wierszy oraz ballad, zobaczyć
-      miejsca, z którymi są one związane oraz posłuchać muzyki.
-    </p>
-    <p>Bilet na rejs statkiem N 15 zł, U 10 zł</p>
-    <p>Cena wycieczki 150 zł</p>
-    <p>Czas trwania wycieczki: 1,5 godz.</p>
-    <h3>Wycieczka śladami detektywa Mocka</h3>
-    <p>
-      Na podstawie kryminałów Marka Krajewskiego Wycieczka śladami detektywa
-      Eberharda Mocka dopiero zaczyna swoją karierę w stolicy Dolnego Śląska. Ma
-      stać się ona produktem markowym miasta i ściągnąć tutaj wielbicieli
-      Wrocławia i czarnego kryminału. Dla poszukiwaczy mocnych wrażeń została
-      stworzona trasa śladami nietuzinkowego detektywa Mocka, pedanta i
-      niestrudzonego psa gończego a zarazem żarłoka, pijaka, dziwkarza, gbura
-      pomiatającego podwładnymi i własną żoną, który częstokroć wykorzystuje swą
-      władzę dla zwykłej prywaty. Każdy miłośnik kryminałów Marka Krajewskiego
-      może wcześniej wydrukować ze strony Urzędu Miejskiego Wrocławia
-      (www.wroclaw.pl, przewodnik turystyczny: trasy turystyczne) specjalnie do
-      tego celu przygotowaną trasę turystyczną i udać się w miejsca związane z
-      Mockiem i toczonymi przez niego śledztwami. Jednakże jest to trasa
-      adresowana raczej dla znawców losów Mocka niż potencjalnych przyszłych
-      czytelników. Indywidualny turysta, nie znający jeszcze utworów M.
-      Krajewskiego, może poczuć się trochę zagubiony. Dlatego zapraszam na
-      wycieczkę zawierającą elementy animacji turystycznej, tak aby przybliżyć
-      atmosferę przedwojennego Wrocławia. Kostium, muzyka, opowieść przewodnicka
-      przeplatana cytatami z kryminałów Marka Krajewskiego oraz zakończenie
-      wycieczki w klimatycznym Pubie Włodkowica 21, ma pokazać, że zwiedzanie
-      Wrocławia wcale nie musi być nudne i że podróż w czasie jest możliwa.
-    </p>
-    <p>
-      Wycieczka adresowana do osób dorosłych. Jeśli chcą Państwo poczuć trochę
-      magii metropolii nad Odrą i zapoznać się z postacią detektywa Mocka,
-      bohatera „pełnego wad i niekoniecznie budzącego sympatię, ale przez to
-      bardzo autentycznego”, zapraszam na spacer.
-    </p>
-    <p>Czas trwania wycieczki: 3,5 godz.</p>
+
+    <h3>Dla rodzin z dziećmi</h3>
+
+    <ul>
+      <li>9. „Czy wy wiecie, czy nie wiecie? – Krasnoludki są na świecie!” – wycieczka rodzinna dla wszystkich
+      wielbicieli krasnali: tych małych i tych dużych. Co zachwyciło krasnoludki we Wrocławiu, że założyły
+      właśnie tutaj swoją osadę, stając się nieodłącznym symbolem naszego miasta? Jak wyglądają? Jak się
+      nazywają i skąd biorą się niektóre krasnalowe imiona? Co krasnoludki lubią najbardziej? Odpowiedzi
+      na wszystkie te pytania będzie można uzyskać na naszym spacerze, podczas którego nie zabraknie
+również wspólnych zabaw oraz krasnalowych zadań.</li>
+      <li>10. „Wrocław z dreszczykiem – wycieczka śladami mrocznych legend i opowieści” – dla wszystkich,
+      którzy lubią się bać (nawet troszeczkę) i tych, którzy lubią słuchać historii niezwykłych. Podczas
+      rodzinnego spaceru dowiemy się, komu zmroził krew w żyłach wściekły duch skąpej przekupki, kto
+      pojawia się na mostku pokutnic i jakie kary wykonywano pod pręgierzem. Poznamy wrocławskie
+legendy i niezwykłe historie prawdziwe.</li>
+    </ul>
+
+    <p>Polecamy również inne wycieczki tematyczne, m.in.: „Filmowy Wrocław”, „Literacki Wrocław”,
+    „Artystyczny Wrocław”, „Muzyczny Wrocław”, „Miasto przyszłości, czyli modernizm we Wrocławiu”,
+„Śladami kultury żydowskiej we Wrocławiu”, „Rejs statkiem z opowieścią przewodnicką”.</p>
+
   </Layout>
 )
 

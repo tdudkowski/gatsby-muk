@@ -8,14 +8,13 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="info">
       <article>
-        <h2>Przewodnik po Wrocławiu</h2>
+        <h2>Małgorzata Urlich-Kornacka – przewodnik po Wrocławiu</h2>
         <p>
-          Via Wrocław - Małgorzata Urlich-Kornacka kompleksowe usługi
-          turystyczne po Wrocławiu. Znajdziesz tu ciekawostki o stolicy Dolnego
-          Śląska, zamówisz licencjonowanego przewodnika i wybierzesz odpowiednią
-          trasę.
+          Witamy na stronie firmy Via Wrocław – Małgorzata Urlich-Kornacka. Oferujemy kompleksowe usługi
+          turystyczne po Wrocławiu w języku polskim oraz i niemieckim. Tutaj znajdziesz ciekawostki o stolicy
+          Dolnego Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która najbardziej
+          odpowiada Twoim indywidualnym zainteresowaniom.
         </p>
-        <p>Usługi w języku polskim i niemieckim</p>
         <p>
           <i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;607 239 776 |{" "}
           <i className="fa fa-at" aria-hidden="true"></i>
@@ -62,6 +61,7 @@ const IndexPage = () => (
 
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffilmwroclaw%2F&tabs=timeline&width=380&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          title="facebook"
           width="380"
           height="320"
           styleName="border:none;overflow:hidden"
