@@ -21,6 +21,7 @@ body {
 
 .info {
   width: 100%;
+  overflow-y: hidden;
 }
 
 .info article {
@@ -182,8 +183,8 @@ p.signature { padding:1rem;display:inline-block;}
 p.signature a { line-height: .5rem; display:inline-block; padding:3px;}
 
 
-.contactAtAbout {padding-left:1rem; }
-.contactAtAbout li {list-style-type: square; margin:.5rem;}
+.listWithSquares {padding-left:1rem; }
+.listWithSquares li {list-style-type: square; margin:.5rem;}
 
 .publikacje {margin-left:0}
 .publikacje strong {padding:.5rem;}
@@ -191,11 +192,16 @@ p.signature a { line-height: .5rem; display:inline-block; padding:3px;}
 .publikacje ul {padding-left:1.5rem;}
 .publikacje li {list-style-type: square; margin:.5rem 0;}
 
-div.contactOnFront {display: flex; line-height: 1rem;}
+div.contactOnFront {display: flex; flex-direction: column; line-height: 1rem;}
 
-div.contactOnFront i {color: #665; font-size:1.1rem;}
+div.contactOnFront i {color: #665; font-size:1.1rem; padding-left:1rem;}
 
 main h2 {color: #665; font-weight: bold; font-size:2rem; margin:0; padding:0;}
+
+.newsOnFront {width:300px;}
+.newsOnFront h3 {padding:0; margin:.5rem;}
+.newsOnFront a {width:100%;}
+.newsOnFront a:hover {border-color:#ddc; box-shadow: 2px 2px 6px rgba(51,51,51,.5)}
 
 @media (min-width: 800px) {
   header nav {
@@ -211,6 +217,8 @@ main h2 {color: #665; font-weight: bold; font-size:2rem; margin:0; padding:0;}
     text-align: center;
     /* padding: 0; */
   }
+
+  div.contactOnFront {flex-direction: row;}
 }
 
 @media (min-width: 1024px) {
@@ -242,9 +250,14 @@ main h2 {color: #665; font-weight: bold; font-size:2rem; margin:0; padding:0;}
   }
 
   .menu > .news {
-    width: 95%;
+    width: 100%;
     margin-top: 0;
     /* border: none; */
+    position: relative;
+      }
+
+  .menu > .news > iframe {
+    max-width:95%;
   }
 
   .news::before {
@@ -349,7 +362,7 @@ li a {
   background-color: rgba(250, 250, 250, 0.3);
   display: flex;
   flex-direction: column;
-}
+  }
 
 .contact-card {
   background-color: rgba(200, 200, 200, 0.2);

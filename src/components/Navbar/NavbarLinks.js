@@ -1,53 +1,31 @@
 import React from "react"
-import styled from "styled-components"
+// import styled from "styled-components"
 import { Link } from "gatsby"
 
-const NavItem = styled(Link)`
-  /* text-decoration: none;
-  color: #111;
-  display: inline-block;
-  white-space: nowrap;
-  margin: 0 1vw;
-  transition: all 200ms ease-in;
-  position: relative; */
-
-  /* :after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: ".";
-    color: transparent;
-    background: goldenrod;
-    height: 1px;
-    transition: all 0.4s ease-in;
-  } */
-
-  /* :hover {
-    color: goldenrod;
-    ::after {
-      width: 100%;
-    } */
-  }
-
-  @media (max-width: 768px) {
-    /* padding: 20px 0;
-    font-size: 1.5rem;
-    z-index: 6; */
-  }
-`
 const NavbarLinks = () => {
-    return (
-        <ul>
-            {/* <NavItem to="/">Strona główna</NavItem> */}
-            <li><NavItem to="/oferta" activeClassName="active">Oferta</NavItem></li>
-            <li><NavItem to="/dzialalnosc" activeClassName="active">Działalność</NavItem></li>
-            <li><NavItem to="/o-regionie" activeClassName="active">O regionie</NavItem></li>
-            <li><NavItem to="/stowarzyszenie" activeClassName="active">Stowarzyszenie</NavItem></li>
-            <li><NavItem to="/kontakt" activeClassName="active">Kontakt</NavItem></li>
-        </ul>
-    )
+  return (
+    <ul>
+      {/* <NavItem to="/">Strona główna</NavItem> */}
+      <li>
+        <Link activeClassName="menuLinkActive" to="/">Strona główna</Link>
+      </li>
+      <li>
+        <Link activeClassName="menuLinkActive" to="/o">O mnie</Link>
+      </li>
+      <li>
+        <Link activeClassName="menuLinkActive" to="/wroclaw">O Wrocławiu</Link>
+      </li>
+      <li>
+        <Link activeClassName="menuLinkActive" to="/wycieczki">Wycieczki</Link>
+      </li>
+      <li>
+        <Link activeClassName="menuLinkActive" to="/publikacje">Publikacje</Link>
+      </li>
+      <li>
+        <Link activeClassName="menuLinkActive" to="/deutsch">Deutsch</Link>
+      </li>
+    </ul>
+  )
 }
 
 export default NavbarLinks

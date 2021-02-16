@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const DeutchPage = () => (
+const DeutschPage = () => (
   <Layout>
     <SEO title="Deutsch" />
 
@@ -28,4 +28,4 @@ const DeutchPage = () => (
   </Layout>
 )
 
-export default DeutchPage
+export default DeutschPage

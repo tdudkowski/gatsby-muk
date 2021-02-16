@@ -10,7 +10,7 @@ const OPage = () => (
     <p>Dodatkowy zakres uprawnień: przewodnik po Centrum Historii Zajezdnia Wrocław oraz Centrum Wiedzy o Wodzie Hydropolis</p>
     <p>Wykształcenie: wyższe filologiczne, filologia germańska oraz filologia słowiańska</p>
 
-    <ul className="contactAtAbout">
+    <ul className="listWithSquares">
       <li>telefon: +48 607 239 776</li>
       <li>Whatsapp: tak</li>
       <li>www: www.viawroclaw.com</li>

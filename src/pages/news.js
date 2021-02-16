@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -6,61 +8,41 @@ const NewsPage = ({ data }) => (
   <Layout>
     <SEO title="Aktualności" />
 
-    {/* {data.allWordpressPost.edges.map(({ node }) => (
-      <section>
-        <h4>{node.title}</h4>
-        <p>{node.content}</p>
-        <p>{node.id}</p>
-      </section>
-    ))} */}
-
     <h2>Aktualności</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit pariatur
-      aperiam nobis? Excepturi dolorem tempore facilis esse omnis vitae quidem.
-      Consectetur esse illo vero porro necessitatibus dolorem assumenda
-      veritatis? Assumenda.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit pariatur
-      aperiam nobis? Excepturi dolorem tempore facilis esse omnis vitae quidem.
-      Consectetur esse illo vero porro necessitatibus dolorem assumenda
-      veritatis? Assumenda.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit pariatur
-      aperiam nobis? Excepturi dolorem tempore facilis esse omnis vitae quidem.
-      Consectetur esse illo vero porro necessitatibus dolorem assumenda
-      veritatis? Assumenda.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit pariatur
-      aperiam nobis? Excepturi dolorem tempore facilis esse omnis vitae quidem.
-      Consectetur esse illo vero porro necessitatibus dolorem assumenda
-      veritatis? Assumenda.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit pariatur
-      aperiam nobis? Excepturi dolorem tempore facilis esse omnis vitae quidem.
-      Consectetur esse illo vero porro necessitatibus dolorem assumenda
-      veritatis? Assumenda.
-    </p>
-  </Layout>
+
+    <p>Szanowni Państwo, ruszamy z nowym projektem pt. "Z Wrocławiem w tle", który obejmować będzie cztery spotkania literackie z wrocławskimi autorami oraz cztery wieczorne wycieczki tematyczne. Spotkania odbywać się będą w nowym Odra Centrum stojącym przy moście Grunwaldzkim. Spotkania i wycieczki są bezpłatne, obowiązują zapisy.</p>
+    <p>Cykl poprowadzi: Małgorzata Urlich-Kornacka</p>
+    <p>Wrocław jest bez wątpienia miastem literatury i ma się czym poszczycić. Nie przez przypadek został Światową Stolicą Książki UNESCO, a wiersz poety Tadeusza Różewicza stał się w 2016 roku oficjalnym hymnem i od tamtego czasu również oficjalną muzyczną wizytówką każdej kolejnej Światowej Stolicy Książki UNESCO. Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
+
+    <strong>Zapraszamy!</strong>
+
+    <div>
+      <Img fixed={data.afisz.childImageSharp.fixed} />
+    </div>
+
+    <ul className="listWithSquares">
+      <li>Projekt finansowany przez Wrocławski Dom Literatury oraz Wydział Promocji Miasta i Turystyki Urzędu Miejskiego we Wrocławiu.</li>
+      <li>Partnerzy projektu: <a href="https://przewodnicy.org">Stowarzyszenie TUiTAM</a> oraz Odra Centrum</li>
+      <li><a href="https://visitwroclaw.eu/">Oficjalny Serwis Turystyczny Wrocławia - visitwroclaw.eu</a></li>
+      <li><a href="https://literatura.wroclaw.pl/">Wrocławski Dom Literatury - literatura.wroclaw.pl</a></li>
+    </ul>
+  </Layout >
 )
 
 export default NewsPage
 
-// export const pageQuery = graphql`
-//   query MyQuery {
-//     // allWordpressPost {
-//     //   edges {
-//     //     node {
-//     //       title
-//     //       content
-//     //       id
-//     //       date
-//     //     }
-//     //   }
-//     // }
-//   }
-// `
+
+export const indexQuery = graphql`
+  query NewsImages {
+        afisz: file(
+      relativePath: {eq: "afisz-z_wroclawiem_w_tle.jpg" }
+    ) {
+        id
+      childImageSharp {
+        fixed(width: 640) {
+        ...GatsbyImageSharpFixed
+      }
+      }
+    }
+  }
+`

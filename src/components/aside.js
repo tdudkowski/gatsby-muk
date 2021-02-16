@@ -1,22 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Aside = () => (
+const Aside = ({ page }) => (
+
   <aside>
     <ul>
       <li>
-        <Link to="/news">Aktualności</Link>
+        <Link activeClassName="menuLinkActive" to="/news">Aktualności</Link>
       </li>
       <li>
         <a href="http://przewodnicy.org/">TUiTAM</a>
       </li>
     </ul>
     <hr />
-    <ul className="contact">
+    { page === "contact" ? null : <ul className="contact">
       <li>
         <Link to="/kontakt">Kontakt</Link>
       </li>
-    </ul>
+    </ul>}
   </aside>
 )
 

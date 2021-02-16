@@ -1,9 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 import "../styles/css/font-awesome.css"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div className="container">
     <SEO title="Home" />
     <section className="info">
@@ -17,8 +18,8 @@ const IndexPage = () => (
         odpowiada Twoim indywidualnym zainteresowaniom.
         </p>
         <div className="contactOnFront">
-          <i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;+48 607 239 776 |&nbsp;
-          <i className="fa fa-at" aria-hidden="true"></i>&nbsp;malgorzata.wroclove@gmail.com
+          <section><i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;+48 607 239 776</section>
+          <section><i className="fa fa-at" aria-hidden="true"></i>&nbsp;malgorzata.wroclove@gmail.com</section>
         </div>
       </article>
       <ul>
@@ -26,6 +27,11 @@ const IndexPage = () => (
           <Link to="kontakt">Kontakt</Link>
         </li>
       </ul>
+      <div className="newsOnFront">
+        <Link to="/news">
+          <h3>Aktualności</h3>
+          <Img fixed={data.afisz.childImageSharp.fixed} />
+        </Link></div>
     </section>
     <div className="menu">
       <section className="about">
@@ -57,7 +63,8 @@ const IndexPage = () => (
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffilmwroclaw%2F&tabs=timeline&width=380&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           title="facebook"
-          width="380"
+          width="100%"
+          maxWidth="380"
           height="320"
           styleName="border:none;overflow:hidden"
           scrolling="no"
@@ -71,3 +78,18 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const indexQuery = graphql`
+  query IndexImages {
+        afisz: file(
+      relativePath: {eq: "afisz-z_wroclawiem_w_tle.jpg" }
+    ) {
+        id
+      childImageSharp {
+        fixed(width: 300) {
+        ...GatsbyImageSharpFixed
+      }
+      }
+    }
+  }
+`

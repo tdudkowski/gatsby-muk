@@ -4,12 +4,12 @@ import Aside from "./aside"
 import Footer from "./footer"
 import layoutStyles from "./layout.module.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, page }) => {
   return (
     <div className={layoutStyles.container}>
       <Header />
       <main>
-        <Aside />
+        <Aside page={page} />
         <article>{children}</article>
       </main>
       <Footer />

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import "../styles/css/font-awesome.css"
 
 const KontaktPage = () => (
-  <Layout>
+  <Layout page="contact">
     <SEO title="Kontakt" />
     <h2>Kontakt</h2>
     <p>
