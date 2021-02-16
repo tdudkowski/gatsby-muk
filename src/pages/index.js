@@ -11,22 +11,17 @@ const IndexPage = () => (
         <h2>Małgorzata Urlich-Kornacka – przewodnik po Wrocławiu</h2>
         <p>
           Witamy na stronie firmy Via Wrocław – Małgorzata Urlich-Kornacka. Oferujemy kompleksowe usługi
-          turystyczne po Wrocławiu w języku polskim oraz i niemieckim. Tutaj znajdziesz ciekawostki o stolicy
-          Dolnego Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która najbardziej
-          odpowiada Twoim indywidualnym zainteresowaniom.
+          turystyczne po Wrocławiu w języku polskim oraz i niemieckim.</p>
+        <p>Tutaj znajdziesz ciekawostki o stolicy
+        Dolnego Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która najbardziej
+        odpowiada Twoim indywidualnym zainteresowaniom.
         </p>
-        <p>
-          <i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;607 239 776 |{" "}
-          <i className="fa fa-at" aria-hidden="true"></i>
-          &nbsp;malgorzata.wroclove@gmail.com
-        </p>
+        <div className="contactOnFront">
+          <i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;+48 607 239 776 |&nbsp;
+          <i className="fa fa-at" aria-hidden="true"></i>&nbsp;malgorzata.wroclove@gmail.com
+        </div>
       </article>
       <ul>
-        <li>
-          <a href="http://www.viawroclaw.com/rezerwacja.php">
-            Rezerwacja wycieczki
-          </a>
-        </li>
         <li>
           <Link to="kontakt">Kontakt</Link>
         </li>
@@ -46,7 +41,7 @@ const IndexPage = () => (
       <section className="biz">
         <ul>
           <li>
-            <Link to="wycieczki">Wycieczki!</Link>
+            <Link to="wycieczki">Wycieczki</Link>
           </li>
           <li>
             <Link to="publikacje">Publikacje</Link>

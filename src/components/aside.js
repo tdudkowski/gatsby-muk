@@ -16,9 +16,6 @@ const Aside = () => (
       <li>
         <Link to="/kontakt">Kontakt</Link>
       </li>
-      <li>
-        <a href="http://www.viawroclaw.com/rezerwacja.php">Zamów wycieczkę</a>
-      </li>
     </ul>
   </aside>
 )
