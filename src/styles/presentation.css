@@ -185,6 +185,18 @@ p.signature a { line-height: .5rem; display:inline-block; padding:3px;}
 .contactAtAbout {padding-left:1rem; }
 .contactAtAbout li {list-style-type: square; margin:.5rem;}
 
+.publikacje {margin-left:0}
+.publikacje strong {padding:.5rem;}
+.publikacje p {margin:0;}
+.publikacje ul {padding-left:1.5rem;}
+.publikacje li {list-style-type: square; margin:.5rem 0;}
+
+div.contactOnFront {display: flex; line-height: 1rem;}
+
+div.contactOnFront i {color: #665; font-size:1.1rem;}
+
+main h2 {color: #665; font-weight: bold; font-size:2rem; margin:0; padding:0;}
+
 @media (min-width: 800px) {
   header nav {
     /* transform: translateX(-15px); */
