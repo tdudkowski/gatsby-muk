@@ -15,17 +15,18 @@ const NewsPage = ({ data }) => (
     <p>Wrocław jest bez wątpienia miastem literatury i ma się czym poszczycić. Nie przez przypadek został Światową Stolicą Książki UNESCO, a wiersz poety Tadeusza Różewicza stał się w 2016 roku oficjalnym hymnem i od tamtego czasu również oficjalną muzyczną wizytówką każdej kolejnej Światowej Stolicy Książki UNESCO. Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
 
     <strong>Zapraszamy!</strong>
-
-    <div>
-      <Img fixed={data.afisz.childImageSharp.fixed} />
-    </div>
-
+    <hr />
     <ul className="listWithSquares">
       <li>Projekt finansowany przez Wrocławski Dom Literatury oraz Wydział Promocji Miasta i Turystyki Urzędu Miejskiego we Wrocławiu.</li>
       <li>Partnerzy projektu: <a href="https://przewodnicy.org">Stowarzyszenie TUiTAM</a> oraz Odra Centrum</li>
       <li><a href="https://visitwroclaw.eu/">Oficjalny Serwis Turystyczny Wrocławia - visitwroclaw.eu</a></li>
       <li><a href="https://literatura.wroclaw.pl/">Wrocławski Dom Literatury - literatura.wroclaw.pl</a></li>
     </ul>
+
+    <div>
+      <Img fixed={data.afisz.childImageSharp.fixed} />
+    </div>
+
   </Layout >
 )
 

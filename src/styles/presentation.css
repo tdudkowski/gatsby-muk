@@ -327,6 +327,8 @@ body {
   /* border: 1px solid red; */
 }
 
+p {margin:0; padding:1rem .5rem}
+
 a {
   outline: 0;
   text-decoration: none;
@@ -368,3 +370,7 @@ li a {
   background-color: rgba(200, 200, 200, 0.2);
   padding: 1rem;
 }
+
+.wro_list li {list-style-type: square; display: flex; box-shadow: 2px 2px 4px rgba(51,51,51,.3);}
+.wro_list li section {flex:1; margin:10px 1rem}
+.wro_list li div.gatsby-image-wrapper {flex-basis: 120px; margin:0;}
