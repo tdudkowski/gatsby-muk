@@ -1,17 +1,23 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import "../styles/sub.css"
+import Wroclaw1 from "../images/przew_wroclaw_cover.jpg"
+import DlnSlask1 from "../images/malgorzata-dolnyslask1_small.jpg"
+import Mock1 from "../images/malgorzata-mock1_small.jpg"
+import Feniks1 from "../images/feniks_okladka.jpg"
+import Kloss1 from "../images/kloss_okladka_small.jpg"
+import WroOkolice1 from "../images/okolice_wroc_cover.jpg"
 
 const PublikacjePage = ({ data }) => (
   <Layout>
     <SEO title="Publikacje" />
     <h2>Publikacje</h2>
     <section className="publikacje">
+      <h3>„Przewodnik po Wrocławiu”</h3>
       <section>
-        <h3>„Przewodnik po Wrocławiu”</h3>
-        <strong>Via Nova, 2006; wersja uaktualniona w roku 2019</strong>
         <p>
           Idealny dla wszystkich, którzy będąc we Wrocławiu na jeden, dwa lub trzy dni, chcą zobaczyć
           najpiękniejsze zakątki stolicy Dolnego Śląska.</p>
@@ -28,15 +34,13 @@ const PublikacjePage = ({ data }) => (
 
       </section>
       <section>
-        <Img fixed={data.wroclaw1.childImageSharp.fixed} />
-        <Img fixed={data.wroclaw2.childImageSharp.fixed} />
+        <img src={Wroclaw1} alt="okładka" className="publikacjeIMG" />
       </section>
     </section>
 
     <section className="publikacje">
+      <h3>„Na tropie zaginionego Breslau. Przewodnik na podstawie powieści Marka Krajewskiego”</h3>
       <section>
-        <h3>„Na tropie zaginionego Breslau. Przewodnik na podstawie powieści Marka Krajewskiego”</h3>
-        <strong>Via Wrocław, 2017</strong>
         <p>
           Propozycja dla miłośników powieści kryminalnych Marka Krajewskiego oraz zwolenników
           nieszablonowego zwiedzania Wrocławia. Na przygotowanej trasie znajdują się bowiem nie tylko
@@ -56,15 +60,15 @@ const PublikacjePage = ({ data }) => (
         </ul>
       </section>
       <section>
-        <Img fixed={data.mock1.childImageSharp.fixed} />
-        <Img fixed={data.mock2.childImageSharp.fixed} />
+        <img src={Mock1} alt="okładka" className="publikacjeIMG" />
+        {/* <Img fixed={data.mock1.childImageSharp.fixed} /> */}
+        {/* <Img fixed={data.mock2.childImageSharp.fixed} /> */}
       </section>
     </section>
 
     <section className="publikacje">
+      <h3>„Śladami Klossa po Wrocławiu”</h3>
       <section>
-        <h3>„Śladami Klossa po Wrocławiu”</h3>
-        <strong>Via Wrocław, 2017</strong>
         <p>
           W jakim lokalu porucznik von Vormann wypowiada hasło o kasztanach z placu Pigalle? Gdzie znajduje
           się willa profesora Porschatta? A sztab generała von Boldta? W jakiej kamienicy mieszkała Christin
@@ -81,15 +85,15 @@ const PublikacjePage = ({ data }) => (
         </ul>
       </section>
       <section>
-        <Img fixed={data.kloss1.childImageSharp.fixed} />
-        <Img fixed={data.kloss2.childImageSharp.fixed} />
+        <img src={Kloss1} alt="okładka" className="publikacjeIMG" />
+        {/* <Img fixed={data.kloss1.childImageSharp.fixed} /> */}
+        {/* <Img fixed={data.kloss2.childImageSharp.fixed} /> */}
       </section>
     </section>
 
     <section className="publikacje">
+      <h3>„Dom Handlowy «Feniks». Dawny dom towarowy braci Baraschów”</h3>
       <section>
-        <h3>„Dom Handlowy «Feniks». Dawny dom towarowy braci Baraschów”</h3>
-        <strong>Via Nova, 2019</strong>
         <p>
           Monografia poświęcona najstarszemu domowi handlowemu we Wrocławiu – popularnemu i
           lubianemu „Feniksowi”. Z jego działalnością wiąże się wiele ciekawych historii, anegdot i mitów, które
@@ -110,15 +114,15 @@ const PublikacjePage = ({ data }) => (
         </ul>
       </section>
       <section>
-        <Img fixed={data.feniksokladka.childImageSharp.fixed} />
-        <Img fixed={data.fenikstrescsmall.childImageSharp.fixed} />
+        <img src={Feniks1} alt="okładka" className="publikacjeIMG" />
+        {/* <Img fixed={data.feniksokladka.childImageSharp.fixed} /> */}
+        {/* <Img fixed={data.fenikstrescsmall.childImageSharp.fixed} /> */}
       </section>
     </section>
 
     <section className="publikacje">
+      <h3>„Dolny Śląsk. 10 najpiękniejszych wycieczek”</h3>
       <section>
-        <h3>„Dolny Śląsk. 10 najpiękniejszych wycieczek”</h3>
-        <strong>Via Nova, 2015</strong>
         <p>
           Zamki, pałace, oryginalne świątynie, wielkie klasztory, zabytki techniki, gigantyczne sztolnie z okresu
           drugiej wojny światowej – to wszystko można zobaczyć na Dolnym Śląsku. I nie tylko to! Na turystów
@@ -137,16 +141,16 @@ odkryć i poznać Dolny Śląsk. </p>
 
       </section>
       <section>
-        <Img fixed={data.dolnyslask1small.childImageSharp.fixed} />
-        <Img fixed={data.dolnyslask2small.childImageSharp.fixed} />
+        <img src={DlnSlask1} alt="okładka" className="publikacjeIMG" />
+        {/* <Img fixed={data.dolnyslask1small.childImageSharp.fixed} /> */}
+        {/* <Img fixed={data.dolnyslask2small.childImageSharp.fixed} /> */}
       </section>
     </section>
 
 
     <section className="publikacje">
+      <h3>„Okolice Wrocławia. Nawigator turystyczny”</h3>
       <section>
-        <h3>„Okolice Wrocławia. Nawigator turystyczny”</h3>
-        <strong>Carta Blanca, 2008</strong>
         <p>
           Każdy z nas szuka miejsc wyjątkowych – ciekawych, pełnych uroku, pozwalających wypocząć.</p>
         <p>We Wrocławiu i jego okolicach jest ich naprawdę wiele – warto odnaleźć figurki krasnali we Wrocławiu,
@@ -163,8 +167,9 @@ odkryć i poznać Dolny Śląsk. </p>
         </ul>
       </section>
       <section>
-        <Img fixed={data.wro_okolice1.childImageSharp.fixed} />
-        <Img fixed={data.wro_okolice2.childImageSharp.fixed} />
+        <img src={WroOkolice1} alt="okładka" className="publikacjeIMG" />
+        {/* <Img fixed={data.wro_okolice1.childImageSharp.fixed} /> */}
+        {/* <Img fixed={data.wro_okolice2.childImageSharp.fixed} /> */}
       </section>
     </section>
 
@@ -215,8 +220,8 @@ export const publikacjeQuery = graphql`
     wroclaw1: file(relativePath: {eq: "przew_wroclaw_cover.jpg" }) {
         id
       childImageSharp {
-        fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
       }
       }
     }

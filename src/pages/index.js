@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
         <h2>Małgorzata Urlich-Kornacka – przewodnik po Wrocławiu</h2>
         <p>
           Witamy na stronie firmy Via Wrocław – Małgorzata Urlich-Kornacka. Oferujemy kompleksowe usługi
-          turystyczne po Wrocławiu w języku polskim oraz i niemieckim.</p>
+          turystyczne po Wrocławiu w języku polskim i niemieckim.</p>
         <p>Tutaj znajdziesz ciekawostki o stolicy
         Dolnego Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która najbardziej
         odpowiada Twoim indywidualnym zainteresowaniom.
@@ -22,12 +22,11 @@ const IndexPage = ({ data }) => (
           <section><i className="fa fa-at" aria-hidden="true"></i>&nbsp;malgorzata.wroclove@gmail.com</section>
         </div>
       </article>
-      <ul>
-        <li>
-          <Link to="kontakt">Kontakt</Link>
-        </li>
-      </ul>
+
       <div className="newsOnFront">
+
+        <Link to="kontakt"><h3>Kontakt</h3></Link>
+
         <Link to="/news">
           <h3>Aktualności</h3>
           <Img fixed={data.afisz.childImageSharp.fixed} />
@@ -42,10 +41,6 @@ const IndexPage = ({ data }) => (
           <li>
             <Link to="wroclaw">O Wrocławiu</Link>
           </li>
-        </ul>
-      </section>
-      <section className="biz">
-        <ul>
           <li>
             <Link to="wycieczki">Wycieczki</Link>
           </li>

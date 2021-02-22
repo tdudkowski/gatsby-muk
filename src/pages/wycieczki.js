@@ -1,18 +1,22 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const WycieczkiPage = () => (
+const WycieczkiPage = ({ data }) => (
       <Layout>
             <SEO title="Wycieczki" />
 
-            <h2>Wycieczki – przykładowa oferta</h2>
+            <h2>Wycieczki – przykładowa oferta TOP 10</h2>
+
+
             <p>
                   Poniżej kilka propozycji wycieczek. Każda z proponowanych tras dostosowywana jest do wieku,
                   zainteresowań i możliwości grupy. Czas ich trwania waha się od półtorej do trzech godzin.
     </p>
 
-            <strong>TOP 10</strong>
+            <Img fluid={data.wycieczka.childImageSharp.fluid} />
 
             <h3>Dla wszystkich</h3>
 
@@ -120,3 +124,17 @@ legendy i niezwykłe historie prawdziwe.</li>
 )
 
 export default WycieczkiPage
+
+export const publikacjeQuery = graphql`
+  query ImagesWycieczki {
+        wycieczka: file(
+      relativePath: {eq: "omnie3.jpg" }
+    ) {
+        childImageSharp {
+        fluid(maxWidth: 1200) {
+        ...GatsbyImageSharpFluid
+      }
+      }
+    }
+  }
+  `

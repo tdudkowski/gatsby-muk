@@ -1,9 +1,11 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/css/font-awesome.css"
 
-const KontaktPage = () => (
+const KontaktPage = ({ data }) => (
   <Layout page="contact">
     <SEO title="Kontakt" />
     <h2>Kontakt</h2>
@@ -45,21 +47,38 @@ const KontaktPage = () => (
       <input type="hidden" name="form-name" value="contact" />
       <h3>Kontakt</h3>
       <label>
-        <span>E-mail (opcjonalnie)</span>
-        <input type="email" name="_replyto" id="_replyto" />
+        <h4>E-Mail</h4>
+        <input type="email" name="replyto" id="replyto" required />
       </label>
       <label>
-        <span>Wiadomość (wymagane)</span>
-        <textarea name="message" id="message" rows="5" required />
+        <h4> Wiadomość / Nachricht </h4>
+        <textarea name="message" id="message" rows="8" required />
       </label>
       <div>
         <button type="submit" className="btn">
-          Wyślij
+          Wyślij / Nachricht senden
         </button>
-        <input type="reset" value="Wyczyść formularz" className="btn" />
+        <input type="reset" value="Wyczyść formularz / Nachricht löschen " className="btn" />
       </div>
     </form>
+
+    <Img fluid={data.wycieczka.childImageSharp.fluid} />
+
   </Layout>
 )
 
 export default KontaktPage
+
+export const publikacjeQuery = graphql`
+  query ImagesKontakt {
+        wycieczka: file(
+      relativePath: {eq: "omnie4.jpg" }
+    ) {
+        childImageSharp {
+        fluid(maxWidth: 1200) {
+        ...GatsbyImageSharpFluid
+      }
+      }
+    }
+  }
+  `
