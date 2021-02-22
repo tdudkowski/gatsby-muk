@@ -41,11 +41,11 @@ export default OPage
 export const publikacjeQuery = graphql`
   query ImagesOMnie {
         wycieczka: file(
-      relativePath: {eq: "omnie1.jpg" }
+      relativePath: {eq: "wycieczka1.jpg" }
     ) {
         childImageSharp {
-        fluid(maxWidth: 1200) {
-        ...GatsbyImageSharpFluid
+        fluid(maxWidth: 900) {
+        ...GatsbyImageSharpFluid_withWebp
       }
       }
     }

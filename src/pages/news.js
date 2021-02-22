@@ -38,10 +38,9 @@ export const indexQuery = graphql`
         afisz: file(
       relativePath: {eq: "afisz-z_wroclawiem_w_tle.jpg" }
     ) {
-        id
-      childImageSharp {
+            childImageSharp {
         fixed(width: 640) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }

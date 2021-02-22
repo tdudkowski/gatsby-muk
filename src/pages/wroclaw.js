@@ -57,133 +57,133 @@ export const pageQuery = graphql`
     fontanna: file(relativePath: { eq: "wro/fontanna_z.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     get: file(relativePath: { eq: "wro/get1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     hala: file(relativePath: { eq: "wro/hala_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     jatki: file(relativePath: { eq: "wro/jatki_2.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     krasnal: file(relativePath: { eq: "wro/krasnal1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     mostek: file(relativePath: { eq: "wro/mostek_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     noc: file(relativePath: { eq: "wro/noc_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     opera: file(relativePath: { eq: "wro/opera_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     panorama: file(relativePath: { eq: "wro/panorama_2.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     piwnica: file(relativePath: { eq: "wro/piwnica.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     powodzianka: file(relativePath: { eq: "wro/powodzianka_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     przyrodnicze: file(relativePath: { eq: "wro/przyrodnicze_z.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     ratusz: file(relativePath: { eq: "wro/ratusz_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     tramwaj: file(relativePath: { eq: "wro/tram_3.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     tumski: file(relativePath: { eq: "wro/tumski_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     wenecja: file(relativePath: { eq: "wro/wenecja_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     nfm: file(relativePath: { eq: "wro/nfm_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     film: file(relativePath: { eq: "wro/film_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
    latarnik: file(relativePath: { eq: "wro/latarnik_1.jpg" }) {
       childImageSharp {
         fixed(width: 200) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }

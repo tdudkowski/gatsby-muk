@@ -72,11 +72,11 @@ export default KontaktPage
 export const publikacjeQuery = graphql`
   query ImagesKontakt {
         wycieczka: file(
-      relativePath: {eq: "omnie4.jpg" }
+      relativePath: {eq: "wycieczka4.jpg" }
     ) {
         childImageSharp {
-        fluid(maxWidth: 1200) {
-        ...GatsbyImageSharpFluid
+        fluid(maxWidth: 900) {
+        ...GatsbyImageSharpFluid_withWebp
       }
       }
     }

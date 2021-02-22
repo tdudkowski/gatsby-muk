@@ -44,11 +44,11 @@ export default DeutschPage
 export const publikacjeQuery = graphql`
   query ImagesDeutsch {
         wycieczka: file(
-      relativePath: {eq: "omnie2.jpg" }
+      relativePath: {eq: "wycieczka2.jpg" }
     ) {
         childImageSharp {
-        fluid(maxWidth: 1200) {
-        ...GatsbyImageSharpFluid
+        fluid(maxWidth: 900) {
+        ...GatsbyImageSharpFluid_withWebp
       }
       }
     }

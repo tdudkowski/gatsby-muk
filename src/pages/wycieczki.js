@@ -128,11 +128,11 @@ export default WycieczkiPage
 export const publikacjeQuery = graphql`
   query ImagesWycieczki {
         wycieczka: file(
-      relativePath: {eq: "omnie3.jpg" }
+      relativePath: {eq: "wycieczka3.jpg" }
     ) {
         childImageSharp {
-        fluid(maxWidth: 1200) {
-        ...GatsbyImageSharpFluid
+        fluid(maxWidth: 900) {
+        ...GatsbyImageSharpFluid_withWebp
       }
       }
     }

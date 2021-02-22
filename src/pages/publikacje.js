@@ -187,7 +187,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -197,7 +197,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -205,7 +205,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -213,7 +213,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -229,7 +229,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -237,7 +237,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -245,7 +245,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -253,7 +253,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -261,7 +261,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -269,7 +269,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
@@ -277,7 +277,7 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
-        ...GatsbyImageSharpFixed
+        ...GatsbyImageSharpFixed_withWebp
       }
       }
     }
