@@ -42,6 +42,19 @@
   max-width: calc(100% - 28px);
 }
 
+.btns {display: flex; flex-direction: column;}
+.btns button, .btns input { margin: .5rem 4px; padding:10px; line-height:1.2rem; height: 2.5rem;}
+
+.wro_list li {display: flex; flex-direction: column;}
+
+@media (min-width: 600px) {
+  .btns {flex-direction: row;}
+
+  .wro_list li:nth-of-type(odd) {flex-direction: row; }
+  .wro_list li:nth-of-type(even) {flex-direction: row-reverse; }
+  div.gatsby-image-wrapper img {height: 100%;}
+}
+
 @media (min-width: 1024px) {
   .container {
     flex-direction: row-reverse;

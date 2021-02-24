@@ -54,11 +54,11 @@ const KontaktPage = ({ data }) => (
         <h4> Wiadomość / Nachricht </h4>
         <textarea name="message" id="message" rows="8" required />
       </label>
-      <div>
+      <div className="btns">
         <button type="submit" className="btn">
           Wyślij / Nachricht senden
         </button>
-        <input type="reset" value="Wyczyść formularz / Nachricht löschen " className="btn" />
+        <input type="reset" value="Wyczyść / Nachricht löschen " className="btn" />
       </div>
     </form>
 

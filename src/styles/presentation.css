@@ -379,7 +379,7 @@ li a {
 
 .wro_list li {list-style-type: square; display: flex; box-shadow: 2px 2px 4px rgba(51,51,51,.3); background-color: rgba(250,250,250,.4); border-radius: 5px; color:#110; overflow: hidden;}
 .wro_list li section {flex:1; margin:10px 1rem}
-.wro_list li div.gatsby-image-wrapper {flex-basis: 200px; margin:0;}
+.wro_list li div.gatsby-image-wrapper {min-width: 200px; margin:0;}
 
 .bcard {border:1px solid rgba(51,51,51,.4); width:auto; display:inline-block; background-color: #eed; margin: 1rem 0; box-shadow:1px 1px 4px rgba(51,51,51,.6); border-radius: 2px;}
 
