@@ -45,13 +45,12 @@ const KontaktPage = ({ data }) => (
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
-      <h3>Kontakt</h3>
       <label>
-        <h4>E-Mail</h4>
+        <h3>E-Mail</h3>
         <input type="email" name="replyto" id="replyto" required />
       </label>
       <label>
-        <h4> Wiadomość / Nachricht </h4>
+        <h3> Wiadomość / Nachricht </h3>
         <textarea name="message" id="message" rows="8" required />
       </label>
       <div className="btns">
