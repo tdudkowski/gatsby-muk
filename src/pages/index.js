@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
 
         <Link to="/news">
           <h3>Aktualności</h3>
-          <Img fixed={data.afisz.childImageSharp.fixed} />
+          <Img fixed={data.afiszsmall.childImageSharp.fixed} />
         </Link></div>
     </section>
     <div className="menu">
@@ -76,7 +76,7 @@ export default IndexPage
 
 export const indexQuery = graphql`
   query IndexImages {
-        afisz: file(
+        afiszsmall: file(
       relativePath: {eq: "afisz-z_wroclawiem_w_tle-300px.jpg" }
     ) {
         id

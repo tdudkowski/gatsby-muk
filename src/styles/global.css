@@ -18,6 +18,10 @@
   flex-direction: column;
 }
 
+.gatsby-image-wrapper {max-height: auto  !important;}
+.gatsby-image-wrapper, .gatsby-image-wrapper > picture, .gatsby-image-wrapper > picture > img {max-width:100%; }
+.gatsby-image-wrapper > picture > img {object-position: top left !important; object-fit:contain !important; height: auto !important;}
+
 .info article {
   margin: 0;
   padding: 1rem;
