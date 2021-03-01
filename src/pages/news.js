@@ -24,7 +24,9 @@ const NewsPage = ({ data }) => (
     </ul>
 
     <div>
-      <Img fixed={data.afisz.childImageSharp.fixed} />
+      <Img fixed={data.afisz_marzec.childImageSharp.fixed} />
+      <hr />
+      <Img fixed={data.afisz_luty.childImageSharp.fixed} />
     </div>
 
   </Layout >
@@ -35,7 +37,16 @@ export default NewsPage
 
 export const indexQuery = graphql`
   query NewsImages {
-        afisz: file(
+        afisz_marzec: file(
+      relativePath: {eq: "afisz-z_wroclawiem_w_tle-marzec.jpg" }
+    ) {
+            childImageSharp {
+        fixed(width: 640) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
+    afisz_luty: file(
       relativePath: {eq: "afisz-z_wroclawiem_w_tle.jpg" }
     ) {
             childImageSharp {
