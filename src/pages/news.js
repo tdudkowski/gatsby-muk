@@ -14,6 +14,13 @@ const NewsPage = ({ data }) => (
     <p>Cykl poprowadzi: Małgorzata Urlich-Kornacka</p>
     <p>Wrocław jest bez wątpienia miastem literatury i ma się czym poszczycić. Nie przez przypadek został Światową Stolicą Książki UNESCO, a wiersz poety Tadeusza Różewicza stał się w 2016 roku oficjalnym hymnem i od tamtego czasu również oficjalną muzyczną wizytówką każdej kolejnej Światowej Stolicy Książki UNESCO. Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
 
+    <p>Najbliższy termin 20-21 maja.</p>
+
+    <ul>
+      <li>20 maja, godz. 16.00; spotkanie z autorką Malwiną Ferenz - Odra Centrum.</li>
+      <li>21 maja, godz. 17.00; spacer "Wrocław z dreszczykiem".</li>
+    </ul>
+
     <strong>Zapraszamy!</strong>
     <hr />
     <ul className="listWithSquares">
@@ -24,7 +31,7 @@ const NewsPage = ({ data }) => (
     </ul>
 
     <div>
-      <Img fixed={data.afisz_marzec.childImageSharp.fixed} />
+      <Img fixed={data.afisz_maj.childImageSharp.fixed} />
       <hr />
       <Img fixed={data.afisz_luty.childImageSharp.fixed} />
     </div>
@@ -37,8 +44,8 @@ export default NewsPage
 
 export const indexQuery = graphql`
   query NewsImages {
-        afisz_marzec: file(
-      relativePath: {eq: "afisz-z_wroclawiem_w_tle-marzec.jpg" }
+        afisz_maj: file(
+      relativePath: {eq: "afisz-z_wroclawiem_w_tle-maj.jpg" }
     ) {
             childImageSharp {
         fixed(width: 640) {
