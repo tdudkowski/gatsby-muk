@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Video from "../components/video"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -14,14 +15,19 @@ const NewsPage = ({ data }) => (
     <p>Cykl poprowadzi: Małgorzata Urlich-Kornacka</p>
     <p>Wrocław jest bez wątpienia miastem literatury i ma się czym poszczycić. Nie przez przypadek został Światową Stolicą Książki UNESCO, a wiersz poety Tadeusza Różewicza stał się w 2016 roku oficjalnym hymnem i od tamtego czasu również oficjalną muzyczną wizytówką każdej kolejnej Światowej Stolicy Książki UNESCO. Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
 
-    <p>Najbliższy termin 20-21 maja.</p>
+    <p>20-21 maja</p>
 
     <ul>
       <li>20 maja, godz. 16.00; spotkanie z autorką Malwiną Ferenz - Odra Centrum.</li>
       <li>21 maja, godz. 17.00; spacer "Wrocław z dreszczykiem".</li>
     </ul>
 
-    <strong>Zapraszamy!</strong>
+    <section className="videos">
+      <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/Wfz4xaZrpuY" videoTitle='"Spacer literacki „Kryminalny Wrocław kobiecym okiem" na podstawie powieści Nadii Szagdaj" [8:36]' /><div>"Spacer literacki „Kryminalny Wrocław kobiecym okiem" na podstawie powieści Nadii Szagdaj" [8:36]</div></div>
+
+      <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/oYJIqdKD1wI" videoTitle='"Spotkanie literackie z Nadią Szagdaj w ramach projektu "Z Wrocławiem w tle"" [1:12:08]' /><div>"Spotkanie literackie z Nadią Szagdaj w ramach projektu "Z Wrocławiem w tle"" [1:12:08]</div></div>
+    </section>
+
     <hr />
     <ul className="listWithSquares">
       <li>Projekt finansowany przez Wrocławski Dom Literatury oraz Wydział Promocji Miasta i Turystyki Urzędu Miejskiego we Wrocławiu.</li>
