@@ -24,6 +24,10 @@ const NewsPage = ({ data }) => (
     </ul>
 
     <section className="videos">
+      <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/PYpKGcrwpIc" videoTitle='"Spacer literacki na podstawie powieści Malwiny Ferenz" [12:41]' /><div>"Spacer literacki na podstawie powieści Malwiny Ferenz" [12:41]</div></div>
+
+      <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/PA27QdiequQ" videoTitle='"Spotkanie literackie z Malwiną Ferenz w ramach projektu "Z Wrocławiem w tle" [58:12]' /><div>"Spotkanie literackie z Malwiną Ferenz w ramach projektu "Z Wrocławiem w tle"" [58:12]</div></div>
+
       <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/Wfz4xaZrpuY" videoTitle='"Spacer literacki „Kryminalny Wrocław kobiecym okiem" na podstawie powieści Nadii Szagdaj" [8:36]' /><div>"Spacer literacki „Kryminalny Wrocław kobiecym okiem" na podstawie powieści Nadii Szagdaj" [8:36]</div></div>
 
       <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/oYJIqdKD1wI" videoTitle='"Spotkanie literackie z Nadią Szagdaj w ramach projektu "Z Wrocławiem w tle"" [1:12:08]' /><div>"Spotkanie literackie z Nadią Szagdaj w ramach projektu "Z Wrocławiem w tle"" [1:12:08]</div></div>
@@ -37,13 +41,14 @@ const NewsPage = ({ data }) => (
       <li><a href="https://literatura.wroclaw.pl/">Wrocławski Dom Literatury - literatura.wroclaw.pl</a></li>
     </ul>
 
-    <div>
-      <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
-      <hr />
+    <hr />
+
+    <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
+    <section>
       <Img fixed={data.afisz_maj.childImageSharp.fixed} />
 
       <Img fixed={data.afisz_luty.childImageSharp.fixed} />
-    </div>
+    </section>
 
   </Layout >
 )
