@@ -202,6 +202,9 @@ div.contactOnFront i {color: #665; font-size:1.1rem; padding-left:1rem;}
 
 main h2 {color: #665; font-weight: bold; font-size:2rem; margin:0; padding:0;}
 
+article > ul { padding-left:2rem;}
+article > ul li {list-style-type: disc;}
+
 .info h2 {margin-bottom:.5rem;}
 
 .newsOnFront {width:300px;}

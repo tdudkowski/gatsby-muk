@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Małgorzata Urlich-Kornacka`,
     description: `strona domowa`,
-    author: `@gatsbyjs`,
+    author: `@tdudkowski / dygresje.info`,
   },
   pathPrefix: "/gatsby-muk",
   plugins: [

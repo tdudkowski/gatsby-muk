@@ -12,16 +12,29 @@ const NewsPage = ({ data }) => (
     <h2>Aktualności</h2>
 
     <p>Szanowni Państwo, ruszamy z nowym projektem pt. "Z Wrocławiem w tle", który obejmować będzie cztery spotkania literackie z wrocławskimi autorami oraz cztery wieczorne wycieczki tematyczne. Spotkania odbywać się będą w nowym Odra Centrum stojącym przy moście Grunwaldzkim. Spotkania i wycieczki są bezpłatne, obowiązują zapisy.</p>
-    <p>Cykl poprowadzi: Małgorzata Urlich-Kornacka</p>
+    <p>Cykl prowadzi: Małgorzata Urlich-Kornacka</p>
+
     <p>Wrocław jest bez wątpienia miastem literatury i ma się czym poszczycić. Nie przez przypadek został Światową Stolicą Książki UNESCO, a wiersz poety Tadeusza Różewicza stał się w 2016 roku oficjalnym hymnem i od tamtego czasu również oficjalną muzyczną wizytówką każdej kolejnej Światowej Stolicy Książki UNESCO.</p>
+
     <p>Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
 
-    <p>24-25 czerwca</p>
+    <p>Poprzednie spotkanie miało miejsce 24-25 czerwca 2021, jeszcze w lipcu planowane jest następne.</p>
 
     <ul>
       <li>24 czerwca, godz. 16.00; spotkanie z wrocławską autorką Jolantą Marią Kaletą - Odra Centrum.</li>
       <li>25 czerwca, godz. 17.00; spacer "Złoto Wrocławia. Między faktami a fikcją literacką".</li>
     </ul>
+
+    <section className="videos">
+
+      <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/QTtAjLO0vK0" videoTitle='"Spacer literacki na podstawie powieści Jolanty Marii Kalety" [11:41]' /><div>"Spacer literacki na podstawie powieści Jolanty Marii Kalety" [11:41]</div></div>
+
+      <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/J1jnpgsApe4" videoTitle='"Spotkanie literackie z Jolantą Marią Kaletą w ramach projektu "Z Wrocławiem w tle"" [1:02:29]' /><div>"Spotkanie literackie z Jolantą Marią Kaletą w ramach projektu "Z Wrocławiem w tle"" [1:02:29]</div></div>
+
+    </section>
+
+    <h3>Poprzednie wydarzenia</h3>
+
 
     <section className="videos">
       <div><Video className="video" videoSrcURL="https://www.youtube.com/embed/PYpKGcrwpIc" videoTitle='"Spacer literacki na podstawie powieści Malwiny Ferenz" [12:41]' /><div>"Spacer literacki na podstawie powieści Malwiny Ferenz" [12:41]</div></div>
