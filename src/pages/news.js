@@ -11,6 +11,12 @@ const NewsPage = ({ data }) => (
 
     <h2>Aktualności</h2>
 
+      <h3>Mock - spacer po Wrocławiu 21 lipca</h3>
+
+      <Img fixed={data.afisz_mock.childImageSharp.fixed} />
+
+      <h3>Spotkania literackie "Z Wrocławiem w tle"</h3>
+
     <p>Szanowni Państwo, ruszamy z nowym projektem pt. "Z Wrocławiem w tle", który obejmować będzie cztery spotkania literackie z wrocławskimi autorami oraz cztery wieczorne wycieczki tematyczne. Spotkania odbywać się będą w nowym Odra Centrum stojącym przy moście Grunwaldzkim. Spotkania i wycieczki są bezpłatne, obowiązują zapisy.</p>
     <p>Cykl prowadzi: Małgorzata Urlich-Kornacka</p>
 
@@ -91,6 +97,15 @@ export const indexQuery = graphql`
     }
     afisz_luty: file(
       relativePath: {eq: "afisz-z_wroclawiem_w_tle.jpg" }
+    ) {
+            childImageSharp {
+        fixed(width: 640) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
+       afisz_mock: file(
+      relativePath: {eq: "mock-spacer-afisz800.jpg" }
     ) {
             childImageSharp {
         fixed(width: 640) {
