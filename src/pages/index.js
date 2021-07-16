@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => (
           Witamy na stronie firmy Via Wrocław – Małgorzata Urlich-Kornacka. Oferujemy kompleksowe usługi
           turystyczne po Wrocławiu w języku polskim i niemieckim.</p>
         <p>Tutaj znajdziesz ciekawostki o stolicy
-        Dolnego Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która najbardziej
-        odpowiada Twoim indywidualnym zainteresowaniom.
+          Dolnego Śląska, zmówisz licencjonowanego przewodnika i wybierzesz trasę, która najbardziej
+          odpowiada Twoim indywidualnym zainteresowaniom.
         </p>
         <div className="contactOnFront">
           <section><i className="fa fa-mobile" aria-hidden="true"></i>&nbsp;+48 607 239 776</section>
@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
 
         <Link to="/news">
           <h3>Aktualności</h3>
-          <Img fixed={data.afiszsmall.childImageSharp.fixed} />
+          <Img fixed={data.afiszsmall1.childImageSharp.fixed} />
         </Link></div>
     </section>
     <div className="menu">
@@ -76,8 +76,8 @@ export default IndexPage
 
 export const indexQuery = graphql`
   query IndexImages {
-        afiszsmall: file(
-      relativePath: {eq: "mock-spacer-afisz300.jpg" }
+        afiszsmall1: file(
+      relativePath: {eq: "afisz-zwrowtle4-300x499.jpg" }
     ) {
         id
       childImageSharp {

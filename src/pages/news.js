@@ -11,11 +11,11 @@ const NewsPage = ({ data }) => (
 
     <h2>Aktualności</h2>
 
-      <h3>Mock - spacer po Wrocławiu 21 lipca</h3>
+    <h3>Mock - spacer po Wrocławiu 21 lipca</h3>
 
-      <Img fixed={data.afisz_mock.childImageSharp.fixed} />
+    <Img fixed={data.afisz_mock.childImageSharp.fixed} />
 
-      <h3>Spotkania literackie "Z Wrocławiem w tle"</h3>
+    <h3>Spotkania literackie "Z Wrocławiem w tle"</h3>
 
     <p>Szanowni Państwo, ruszamy z nowym projektem pt. "Z Wrocławiem w tle", który obejmować będzie cztery spotkania literackie z wrocławskimi autorami oraz cztery wieczorne wycieczki tematyczne. Spotkania odbywać się będą w nowym Odra Centrum stojącym przy moście Grunwaldzkim. Spotkania i wycieczki są bezpłatne, obowiązują zapisy.</p>
     <p>Cykl prowadzi: Małgorzata Urlich-Kornacka</p>
@@ -24,7 +24,12 @@ const NewsPage = ({ data }) => (
 
     <p>Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
 
-    <p>Poprzednie spotkanie miało miejsce 24-25 czerwca 2021, jeszcze w lipcu planowane jest następne.</p>
+    <ul>
+      <li>21 lipca, godz. 18.00 Spacer "Wierszem po wodzie pisane" - Wrocław oczami poetów</li>
+      <li>22 lipca, godz. 16.00 Spotkanie z wrocławską poetką Ewą Sonnenberg; miejsce: Odra Centrum (przy moście Grunwaldzkim)</li>
+    </ul>
+
+    <p>Poprzednie spotkanie miało miejsce 24-25 czerwca 2021.</p>
 
     <ul>
       <li>24 czerwca, godz. 16.00; spotkanie z wrocławską autorką Jolantą Marią Kaletą - Odra Centrum.</li>
@@ -61,9 +66,11 @@ const NewsPage = ({ data }) => (
     </ul>
 
     <hr />
-
-    <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
+    
+    <Img fixed={data.afisz_lipiec.childImageSharp.fixed} />
     <section>
+    <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
+
       <Img fixed={data.afisz_maj.childImageSharp.fixed} />
 
       <Img fixed={data.afisz_luty.childImageSharp.fixed} />
@@ -77,6 +84,15 @@ export default NewsPage
 
 export const indexQuery = graphql`
   query NewsImages {
+    afisz_lipiec: file(
+      relativePath: {eq: "afisz-zwrowtle4-640x960.jpg" }
+    ) {
+            childImageSharp {
+        fixed(width: 640) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
     afisz_czerwiec: file(
       relativePath: {eq: "afisz-zwrowtle_czerwiec_x960.jpg" }
     ) {
