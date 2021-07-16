@@ -25,8 +25,8 @@ const NewsPage = ({ data }) => (
     <p>Liczne wydarzenia literackie skłoniły nas do przygotowania własnego projektu łączącego spotkania z autorami z tematycznymi wycieczkami i promocją niezwykłego miejsca na mapie Wrocławia – nowego Odra Centrum.</p>
 
     <ul>
-      <li>21 lipca, godz. 18.00 Spacer "Wierszem po wodzie pisane" - Wrocław oczami poetów</li>
-      <li>22 lipca, godz. 16.00 Spotkanie z wrocławską poetką Ewą Sonnenberg; miejsce: Odra Centrum (przy moście Grunwaldzkim)</li>
+      <li><strong>21 lipca, godz. 18.00 Spacer "Wierszem po wodzie pisane" - Wrocław oczami poetów</strong></li>
+      <li><strong>22 lipca, godz. 16.00 Spotkanie z wrocławską poetką Ewą Sonnenberg; miejsce: Odra Centrum (przy moście Grunwaldzkim)</strong></li>
     </ul>
 
     <p>Poprzednie spotkanie miało miejsce 24-25 czerwca 2021.</p>
@@ -66,10 +66,10 @@ const NewsPage = ({ data }) => (
     </ul>
 
     <hr />
-    
+
     <Img fixed={data.afisz_lipiec.childImageSharp.fixed} />
     <section>
-    <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
+      <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
 
       <Img fixed={data.afisz_maj.childImageSharp.fixed} />
 
