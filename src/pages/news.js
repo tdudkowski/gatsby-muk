@@ -11,9 +11,9 @@ const NewsPage = ({ data }) => (
 
     <h2>Aktualności</h2>
 
-    <h3>Mock - spacer po Wrocławiu 21 lipca</h3>
+    <h3>Klara Schulz - kryminalny Wrocław kobiecym okiem - 25 sierpnia</h3>
 
-    <Img fixed={data.afisz_mock.childImageSharp.fixed} />
+    <Img fixed={data.afisz_sierpien.childImageSharp.fixed} />
 
     <h3>Spotkania literackie "Z Wrocławiem w tle"</h3>
 
@@ -67,12 +67,11 @@ const NewsPage = ({ data }) => (
 
     <hr />
 
-    <Img fixed={data.afisz_lipiec.childImageSharp.fixed} />
     <section>
+      <Img fixed={data.afisz_mock.childImageSharp.fixed} />
+      <Img fixed={data.afisz_lipiec.childImageSharp.fixed} />
       <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
-
       <Img fixed={data.afisz_maj.childImageSharp.fixed} />
-
       <Img fixed={data.afisz_luty.childImageSharp.fixed} />
     </section>
 
@@ -84,6 +83,15 @@ export default NewsPage
 
 export const indexQuery = graphql`
   query NewsImages {
+    afisz_sierpien: file(
+      relativePath: {eq: "KlaraSchulz.jpg" }
+    ) {
+            childImageSharp {
+        fixed(width: 640) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
     afisz_lipiec: file(
       relativePath: {eq: "afisz-zwrowtle4-640x960.jpg" }
     ) {
