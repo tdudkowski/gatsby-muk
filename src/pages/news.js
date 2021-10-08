@@ -11,9 +11,9 @@ const NewsPage = ({ data }) => (
 
     <h2>Aktualności</h2>
 
-    <h3>Klara Schulz - kryminalny Wrocław kobiecym okiem - 25 sierpnia</h3>
+    <h3>Muzyczny Wrocław na przestrzeni wieków - saksofon i nie tylko... - 16 października 2021</h3>
 
-    <Img fixed={data.afisz_sierpien.childImageSharp.fixed} />
+    <Img fixed={data.afisz_MuzycznyWroclaw.childImageSharp.fixed} />
 
     <h3>Spotkania literackie "Z Wrocławiem w tle"</h3>
 
@@ -68,6 +68,7 @@ const NewsPage = ({ data }) => (
     <hr />
 
     <section>
+      <Img fixed={data.afisz_sierpien.childImageSharp.fixed} />
       <Img fixed={data.afisz_mock.childImageSharp.fixed} />
       <Img fixed={data.afisz_lipiec.childImageSharp.fixed} />
       <Img fixed={data.afisz_czerwiec.childImageSharp.fixed} />
@@ -132,6 +133,15 @@ export const indexQuery = graphql`
       relativePath: {eq: "mock-spacer-afisz800.jpg" }
     ) {
             childImageSharp {
+        fixed(width: 640) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
+    afisz_MuzycznyWroclaw: file(
+      relativePath: {eq: "afisz-MuzycznyWroclawx1000.jpg" }
+    ) {
+          childImageSharp {
         fixed(width: 640) {
         ...GatsbyImageSharpFixed_withWebp
       }
