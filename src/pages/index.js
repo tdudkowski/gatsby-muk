@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 
 export const indexQuery = graphql`
-  query IndexImages {
+  query IndexQuery {
         afiszsmall1: file(
       relativePath: {eq: "afisz-MuzycznyWroclawx300.jpg" }
     ) {

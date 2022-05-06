@@ -1,3 +1,5 @@
+require("dotenv").config({ path: `.env`, })
+
 module.exports = {
   siteMetadata: {
     title: `Małgorzata Urlich-Kornacka`,
@@ -33,14 +35,10 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        // your google analytics tracking id
-        trackingId: `UA-2105423-15`,
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // enable ip anonymization
-        anonymize: true,
+        id: process.env.GOOGLE_TAGMANAGER_ID,
+        includeInDevelopment: false,
       },
     },
   ],
