@@ -11,7 +11,7 @@ const NewsPage = ({ data }) => (
 
     <h2>Aktualności</h2>
 
-    <h3>Silesiana 2022</h3>
+    <h3>11. Targi Książki Regionalnej Silesiana 2022</h3>
 
     <h4>20 maja – Dzień kryminalny</h4>
 
