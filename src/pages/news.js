@@ -3,13 +3,42 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Video from "../components/video"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const NewsPage = ({ data }) => (
   <Layout>
-    <SEO title="Aktualności" />
+    <Seo title="Aktualności" />
 
     <h2>Aktualności</h2>
+
+    <h3>Silesiana 2022</h3>
+
+    <h4>20 maja – Dzień kryminalny</h4>
+
+<ul>
+  <li>godz. 18:30 – „Kryminalny Wrocław kobiecym okiem”, spacer prowadzi Małgorzata Urlich-Kornacka.</li>
+</ul>
+    
+<h4>21 maja – Dzień literacki</h4>
+
+    <ul>
+  <li>godz. 14:00 – „Śladami Tadeusza Różewicza”, spacer prowadzi Małgorzata Urlich-Kornacka.</li>
+  <li>godz. 18:00 – „Wrocław literacko i filmowo” – wycieczkę po mieście, prowadzi Małgorzata Urlich-Kornacka.</li>
+</ul>
+    
+<h4>22 maja – Dzień rodzinny</h4>
+
+<ul>
+  <li>godz. 18.30 – „ Wieczorny spacer z dreszczykiem” – wycieczkę rodzinną prowadzi Małgorzata Urlich-Kornacka.</li>
+</ul>
+
+<h4>Plan</h4>
+
+<ul>
+  <li>Dolnośląska Biblioteka Publiczna <a href="https://www.wbp.wroc.pl/wbp/index.php/pl/katalogi-przeglad/4536-wydarzenia-towarzyszace-silesiana-2022">"Wydarzenia towarzyszące - Harmonogram - Silesiana 2022"</a></li>
+</ul>
+
+     <Img fixed={data.trs.childImageSharp.fixed} />
 
     <h3>Muzyczny Wrocław na przestrzeni wieków - saksofon i nie tylko... - 16 października 2021</h3>
 
@@ -84,6 +113,15 @@ export default NewsPage
 
 export const indexQuery = graphql`
   query NewsImages {
+    trs: file(
+      relativePath: {eq: "trs600.jpg" }
+    ) {
+            childImageSharp {
+        fixed(width: 600) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
     afisz_sierpien: file(
       relativePath: {eq: "KlaraSchulz.jpg" }
     ) {

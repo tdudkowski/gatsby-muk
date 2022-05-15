@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const WroclawPage = ({ data }) => (
   <Layout>
-    <SEO title="O Wrocławiu" />
+    <Seo title="O Wrocławiu" />
     <h2>O Wrocławiu</h2>
 
     <p>

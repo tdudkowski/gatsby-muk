@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const DeutschPage = ({ data }) => (
   <Layout>
-    <SEO title="Deutsch" />
+    <Seo title="Deutsch" />
 
     <h2>Stadtführungen und Erlebnisreisen in Breslau und Niederschlesien mit Małgorzata Urlich-Kornacka</h2>
 

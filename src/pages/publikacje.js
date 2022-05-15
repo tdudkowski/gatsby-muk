@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 // import Img from "gatsby-image"
 import "../styles/sub.css"
 import Wroclaw1 from "../images/przew_wroclaw_cover.jpg"
@@ -13,7 +13,7 @@ import WroOkolice1 from "../images/okolice_wroc_cover.jpg"
 
 const PublikacjePage = ({ data }) => (
   <Layout>
-    <SEO title="Publikacje" />
+    <Seo title="Publikacje" />
     <h2>Publikacje</h2>
     <section className="publikacje">
       <h3>„Przewodnik po Wrocławiu”</h3>

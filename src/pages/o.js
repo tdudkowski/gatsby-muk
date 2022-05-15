@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const OPage = ({ data }) => (
   <Layout>
-    <SEO title="O mnie" />
+    <Seo title="O mnie" />
 
     <p><strong>Małgorzata Urlich-Kornacka</strong> – przewodnik miejski po Wrocławiu, pilot po Dolnym Śląsku i Niemczech (Drezno, Saksonia, Berlin oraz Poczdam). Oprowadzam w języku polskim i niemieckim</p>
     <p>Dodatkowy zakres uprawnień: przewodnik po Centrum Historii Zajezdnia Wrocław oraz Centrum Wiedzy o Wodzie Hydropolis</p>

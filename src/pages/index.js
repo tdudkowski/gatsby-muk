@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../styles/css/font-awesome.css"
 
 const IndexPage = ({ data }) => (
   <div className="container">
-    <SEO title="Home" />
+    <Seo title="Home" />
     <section className="info">
       <article>
         <h2>Małgorzata Urlich-Kornacka – przewodnik po Wrocławiu</h2>
@@ -77,7 +77,7 @@ export default IndexPage
 export const indexQuery = graphql`
   query IndexQuery {
         afiszsmall1: file(
-      relativePath: {eq: "afisz-MuzycznyWroclawx300.jpg" }
+      relativePath: {eq: "trs300.jpg" }
     ) {
         id
       childImageSharp {

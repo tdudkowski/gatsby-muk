@@ -2,12 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../styles/css/font-awesome.css"
 
 const KontaktPage = ({ data }) => (
   <Layout page="contact">
-    <SEO title="Kontakt" />
+    <Seo title="Kontakt" />
     <h2>Kontakt</h2>
     <p>
       Zapraszamy do współpracy firmy, instytucje oraz biura turystyczne. Gwarantujemy fachową obsługę,
