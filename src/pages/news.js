@@ -47,7 +47,7 @@ const NewsPage = ({ data }) => (
     <h3>Spotkania literackie "Z Wrocławiem w tle"</h3>
 
     <p>Szanowni Państwo, ruszamy z nowym projektem pt. "Z Wrocławiem w tle", który obejmować będzie cztery spotkania literackie z wrocławskimi autorami oraz cztery wieczorne wycieczki tematyczne. Spotkania odbywać się będą w nowym Odra Centrum stojącym przy moście Grunwaldzkim. Spotkania i wycieczki są bezpłatne, obowiązują zapisy.</p>
-    <p>Cykl prowadzi: Małgorzata Urlich-Kornacka</p>
+    <p>Cykl prowadzi: Małgorzata Urlich-Kornacka.</p>
 
     <p>Wrocław jest bez wątpienia miastem literatury i ma się czym poszczycić. Nie przez przypadek został Światową Stolicą Książki UNESCO, a wiersz poety Tadeusza Różewicza stał się w 2016 roku oficjalnym hymnem i od tamtego czasu również oficjalną muzyczną wizytówką każdej kolejnej Światowej Stolicy Książki UNESCO.</p>
 
