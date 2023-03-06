@@ -92,7 +92,7 @@ section:hover {
   background-color: rgba(235, 213, 179, 0.9);
 }
 
-.news p {
+.news p, .news em {
   padding: 0;
   margin: 0;
   text-align: left;
@@ -336,7 +336,7 @@ body {
   /* border: 1px solid red; */
 }
 
-p, .info article p {margin:0; padding:.5rem 0}
+p, .info article p,  .info article em {margin:0; padding:.5rem 0}
 
 a {
   outline: 0;

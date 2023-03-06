@@ -77,7 +77,7 @@ export default IndexPage
 export const indexQuery = graphql`
   query IndexQuery {
         afiszsmall1: file(
-      relativePath: {eq: "trs300.jpg" }
+      relativePath: {eq: "spacerownik_wroclaw_okladka-490px.jpg" }
     ) {
         id
       childImageSharp {

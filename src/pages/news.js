@@ -11,6 +11,22 @@ const NewsPage = ({ data }) => (
 
     <h2>Aktualności</h2>
 
+    <h3>"Spacer po Wrocławiu”</h3>
+
+    <p>Wrocław to miasto stu mostów i krasnoludków, ale także stolica Dolnego Śląska nazywana Wenecją Północy. Turyści zaglądają do miasta przejazdem na jeden dzień albo weekend, ale we Wrocławiu można spędzić aktywnie i ciekawie nawet dwutygodniowe wakacje. Nie ma drugiego takiego miasta w Polsce, w którym atmosfera mikrokosmosu Europy byłaby bardziej wyczuwalna.</p>
+
+<p>Spacerownik zawiera dziewięć tras, zarówno tych obejmujących najbardziej znane atrakcje, jak i te mniej oczywiste.</p>
+
+<p><em>„Autorka prezentuje swoje miasto z pasją i miłością, bo zna tu każdy kąt. Opowiada o zabytkach, poleca miejsca, gdzie można zrobić przerwę i po prostu poleniuchować. Prowadzi też do atrakcji, które większość z turystów pomija – zaprasza do odkrywania urokliwych zakątków, murali, rzeźb czy pracowni artystycznych. Wszystko to pozwala poczuć atmosferę miasta. Opis każdego spaceru zaopatrzony jest w schematyczną mapkę, na której zaznaczono wszystkie punkty trasy”</em> (opis ze stron wydawnictwa).</p>
+
+<p>Tekst: Małgorzata Urlich-Kornacka<br />
+
+Wydawca: SBM Sp. z.o.o, Warszawa 2022; liczba stron: 192<br />
+
+Dostępne wersje językowe: polska</p>
+
+<Img fixed={data.okladka_SpacerownikWroclaw.childImageSharp.fixed} />
+
     <h3>11. Targi Książki Regionalnej Silesiana 2022</h3>
 
     <h4>20 maja – Dzień kryminalny</h4>
@@ -181,6 +197,15 @@ export const indexQuery = graphql`
     ) {
           childImageSharp {
         fixed(width: 640) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
+    okladka_SpacerownikWroclaw: file(
+      relativePath: {eq: "spacerownik_wroclaw_okladka-490px.jpg" }
+    ) {
+          childImageSharp {
+        fixed(width: 490) {
         ...GatsbyImageSharpFixed_withWebp
       }
       }
