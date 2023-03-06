@@ -23,7 +23,7 @@ const PublikacjePage = ({ data }) => (
         <p>Wrocław to miasto stu mostów i krasnoludków, ale także stolica Dolnego Śląska nazywana Wenecją Północy. Turyści zaglądają do miasta przejazdem na jeden dzień albo weekend, ale we Wrocławiu można spędzić aktywnie i ciekawie nawet dwutygodniowe wakacje. Nie ma drugiego takiego miasta w Polsce, w którym atmosfera mikrokosmosu Europy byłaby bardziej wyczuwalna.</p>
         <p>Spacerownik zawiera dziewięć tras, zarówno tych obejmujących najbardziej znane atrakcje, jak i te mniej oczywiste.</p>
 
-        <p><em>„Autorka prezentuje swoje miasto z pasją i miłością, bo zna tu każdy kąt. Opowiada o zabytkach, poleca miejsca, gdzie można zrobić przerwę i po prostu poleniuchować. Prowadzi też do atrakcji, które większość z turystów pomija – zaprasza do odkrywania urokliwych zakątków, murali, rzeźb czy pracowni artystycznych. Wszystko to pozwala poczuć atmosferę miasta. Opis każdego spaceru zaopatrzony jest w schematyczną mapkę, na której zaznaczono wszystkie punkty trasy”</em> (opis ze stron wydawnictwa).</p>
+        <p><em>Autorka prezentuje swoje miasto z pasją i miłością, bo zna tu każdy kąt. Opowiada o zabytkach, poleca miejsca, gdzie można zrobić przerwę i po prostu poleniuchować. Prowadzi też do atrakcji, które większość z turystów pomija – zaprasza do odkrywania urokliwych zakątków, murali, rzeźb czy pracowni artystycznych. Wszystko to pozwala poczuć atmosferę miasta. Opis każdego spaceru zaopatrzony jest w schematyczną mapkę, na której zaznaczono wszystkie punkty trasy</em> - opis ze stron wydawnictwa.</p>
 
         <ul>
           <li>Tekst: Małgorzata Urlich-Kornacka</li>

@@ -17,7 +17,7 @@ const NewsPage = ({ data }) => (
 
 <p>Spacerownik zawiera dziewięć tras, zarówno tych obejmujących najbardziej znane atrakcje, jak i te mniej oczywiste.</p>
 
-<p><em>„Autorka prezentuje swoje miasto z pasją i miłością, bo zna tu każdy kąt. Opowiada o zabytkach, poleca miejsca, gdzie można zrobić przerwę i po prostu poleniuchować. Prowadzi też do atrakcji, które większość z turystów pomija – zaprasza do odkrywania urokliwych zakątków, murali, rzeźb czy pracowni artystycznych. Wszystko to pozwala poczuć atmosferę miasta. Opis każdego spaceru zaopatrzony jest w schematyczną mapkę, na której zaznaczono wszystkie punkty trasy”</em> (opis ze stron wydawnictwa).</p>
+<p><em>Autorka prezentuje swoje miasto z pasją i miłością, bo zna tu każdy kąt. Opowiada o zabytkach, poleca miejsca, gdzie można zrobić przerwę i po prostu poleniuchować. Prowadzi też do atrakcji, które większość z turystów pomija – zaprasza do odkrywania urokliwych zakątków, murali, rzeźb czy pracowni artystycznych. Wszystko to pozwala poczuć atmosferę miasta. Opis każdego spaceru zaopatrzony jest w schematyczną mapkę, na której zaznaczono wszystkie punkty trasy</em> - opis ze stron wydawnictwa.</p>
 
 <p>Tekst: Małgorzata Urlich-Kornacka<br />
 

@@ -92,7 +92,7 @@ section:hover {
   background-color: rgba(235, 213, 179, 0.9);
 }
 
-.news p, .news em {
+.news p {
   padding: 0;
   margin: 0;
   text-align: left;
@@ -332,11 +332,9 @@ body {
   display: flex;
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
 p, .info article p,  .info article em {margin:0; padding:.5rem 0}
+
+em {color: #221;}
 
 a {
   outline: 0;
