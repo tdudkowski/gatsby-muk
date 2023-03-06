@@ -10,11 +10,33 @@ import Mock1 from "../images/malgorzata-mock1_small.jpg"
 import Feniks1 from "../images/feniks_okladka.jpg"
 import Kloss1 from "../images/kloss_okladka_small.jpg"
 import WroOkolice1 from "../images/okolice_wroc_cover.jpg"
+import SpacerownikWroclaw from "../images/spacerownik_wroclaw_okladka-490px.jpg"
 
 const PublikacjePage = ({ data }) => (
   <Layout>
     <Seo title="Publikacje" />
     <h2>Publikacje</h2>
+
+    <section className="publikacje">
+      <h3>"Spacer po Wrocławiu”</h3>
+      <section>
+        <p>Wrocław to miasto stu mostów i krasnoludków, ale także stolica Dolnego Śląska nazywana Wenecją Północy. Turyści zaglądają do miasta przejazdem na jeden dzień albo weekend, ale we Wrocławiu można spędzić aktywnie i ciekawie nawet dwutygodniowe wakacje. Nie ma drugiego takiego miasta w Polsce, w którym atmosfera mikrokosmosu Europy byłaby bardziej wyczuwalna.</p>
+        <p>Spacerownik zawiera dziewięć tras, zarówno tych obejmujących najbardziej znane atrakcje, jak i te mniej oczywiste.</p>
+
+        <p><em>„Autorka prezentuje swoje miasto z pasją i miłością, bo zna tu każdy kąt. Opowiada o zabytkach, poleca miejsca, gdzie można zrobić przerwę i po prostu poleniuchować. Prowadzi też do atrakcji, które większość z turystów pomija – zaprasza do odkrywania urokliwych zakątków, murali, rzeźb czy pracowni artystycznych. Wszystko to pozwala poczuć atmosferę miasta. Opis każdego spaceru zaopatrzony jest w schematyczną mapkę, na której zaznaczono wszystkie punkty trasy”</em> (opis ze stron wydawnictwa).</p>
+
+        <ul>
+          <li>Tekst: Małgorzata Urlich-Kornacka</li>
+          <li>Wydawca: SBM Sp. z.o.o, Warszawa 2022; liczba stron: 192</li>
+          <li>Dostępne wersje językowe: polska</li>
+        </ul>
+
+      </section>
+      <section>
+        <img src={SpacerownikWroclaw} alt="okładka" className="publikacjeIMG" />
+      </section>
+    </section>
+
     <section className="publikacje">
       <h3>„Przewodnik po Wrocławiu”</h3>
       <section>
@@ -277,6 +299,15 @@ export const publikacjeQuery = graphql`
         id
       childImageSharp {
         fixed(width: 220) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+      }
+    }
+    okladka_SpacerownikWroclaw: file(
+      relativePath: {eq: "spacerownik_wroclaw_okladka-490px.jpg" }
+    ) {
+          childImageSharp {
+        fixed(width: 490) {
         ...GatsbyImageSharpFixed_withWebp
       }
       }
